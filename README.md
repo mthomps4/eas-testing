@@ -16,8 +16,60 @@
 - Create or Have an Apple Dev account $99
 - You can build and sign your app using EAS Build, but you can't upload it to the Google Play Store unless you have a membership, a one-time $25 USD fee
 
-## Generate and Provide app signing creds
+## First Build
 
 - eas build --platform all
 - eas build --platform ios
 - eas build --platform android
+
+### Asks to generate and provide app signing creds
+
+#### ios
+
+- Would you like to log in to your apple account (Y)
+- Team selected
+- Provider selected
+- bundle identifier registered `org.name.babygroot`
+- Sync capabilities (none)
+- Generate Apple Distribution Cert (Y) (OR REUSE KNOWN)
+- Created App Cert
+- Generate a new Apple Provisioning Profile (Y)
+- Created
+- Would you like to set up Push Notifications (N)
+- Build Queued...
+
+```sh
+Build details: https://expo.dev/accounts/mthomps4/builds/24110723-e9fa-417e-b41f-62e79142593f
+
+Waiting for build to complete. You can press Ctrl+C to exit.
+✔ Build finished
+
+🍎 iOS app:
+https://expo.dev/artifacts/eas/5sj4Z78jvZ5d6h7iAp7XcD.ipa
+```
+
+#### android
+
+- Linked to project @mthomps4/baby-groot
+- Using remote Android Creds (Expo Server)
+- Generate a new Android Keystore (Y)
+- created
+- Uploaded to EAS
+- Build queued...
+
+```sh
+
+Build details: https://expo.dev/accounts/mthomps4/builds/e772e8b7-0928-4596-9b87-3df81c3f4fdb
+
+Waiting for build to complete. You can press Ctrl+C to exit.
+✔ Build finished
+
+🤖 Android app:
+https://expo.dev/artifacts/eas/uzE71nNNpSFfCKRtf8YERZ.aab
+```
+
+## First LOCAL Build for Simulators
+
+### ios
+
+- `eas build --platform ios --profile local`
