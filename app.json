@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "baby-groot",
+    "slug": "baby-groot",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
