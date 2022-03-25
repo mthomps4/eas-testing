@@ -95,6 +95,8 @@ No bundle URL present.
 Make sure youre running a packager server or have included a .jsbundle file in your application bundle.
 ```
 
+Make sure Metro is running: `yarn start` Then start the app from the simulator
+
 ### Local Android
 
 - adsf
