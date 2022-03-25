@@ -70,6 +70,31 @@ https://expo.dev/artifacts/eas/uzE71nNNpSFfCKRtf8YERZ.aab
 
 ## First LOCAL Build for Simulators
 
-### ios
+### Local ios
 
 - `eas build --platform ios --profile local`
+- Linked
+- Uploaded to EAS
+- Build Queued...
+
+```sh
+Build details: https://expo.dev/accounts/mthomps4/builds/2133034b-c7b7-4cf8-b256-0d6da097fb41
+
+Waiting for build to complete. You can press Ctrl+C to exit.
+✔ Build finished
+
+🍎 iOS app:
+https://expo.dev/artifacts/eas/56M1F2BSEXJ9NTggts9X7H.tar.gz
+```
+
+**UH OH!!!**
+Got the `babygroot.app` file but when running
+
+```sh
+No bundle URL present.
+Make sure youre running a packager server or have included a .jsbundle file in your application bundle.
+```
+
+### Local Android
+
+- adsf
