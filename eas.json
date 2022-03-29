@@ -7,11 +7,13 @@
       "node": "16.13.1",
       "yarn": "1.22.10",
       "android": {
-        "image": "latest"
+        "image": "latest",
+        "autoIncrement": "version"
       },
       "ios": {
         "image": "latest",
-        "cocoapods": "1.11.2"
+        "cocoapods": "1.11.2",
+        "autoIncrement": "version"
       }
     },
     "local": {
