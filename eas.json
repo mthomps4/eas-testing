@@ -6,6 +6,7 @@
     "base": {
       "node": "16.13.1",
       "yarn": "1.22.10",
+      "version": "1.0.1",
       "android": {
         "image": "latest"
       },

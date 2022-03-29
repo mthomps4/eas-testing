@@ -145,4 +145,14 @@ Waiting for submission to complete. You can press Ctrl+C to exit.
 
 OOOPS... added APP ICON
 
+- `eas submit -p ios --profile preview --auto-submit
+- creds
+- no push notifications
+- didn't have ascAppId so it asks for App Specific PW
+- Entered...
+
+- Build queued...
+- built
+- auto submitted :tada:
+
 ### android
