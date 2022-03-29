@@ -4,7 +4,15 @@
   },
   "build": {
     "base": {
-      "node": "16.13.1"
+      "node": "16.13.1",
+      "yarn": "1.22.10",
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest",
+        "cocoapods": "1.11.2"
+      }
     },
     "local": {
       "extends": "base",
@@ -45,6 +53,7 @@
     "production": {}
   },
   "submit": {
+    "preview": {},
     "production": {}
   }
 }

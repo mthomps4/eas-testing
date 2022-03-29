@@ -99,4 +99,50 @@ Make sure Metro is running: `yarn start` Then start the app from the simulator
 
 ### Local Android
 
-- adsf
+- This actually threw an error for `expo-dev-client` out the gate. Probably the issue with needing metro for ios as well.
+Not the focus of this Repo... Moving on.
+
+## Deploy to Store
+
+### ios
+
+- add preview profile to eas.json submit
+- `eas submit -p ios --profile preview`
+- 2FA w/ App Store Creds
+- What would you like to submit? › - Use arrow-keys. Return to submit.
+❯   Select a build from EAS
+    Provide a URL to the app archive
+    Provide a path to a local app binary file
+    Provide a build ID to identify a build on EAS
+? Which build would you like to submit? › - Use arrow-keys. Return to submit.
+❯   - ID: 24110723-e9fa-417e-b41f-62e79142593f, Finished at: 3/25/2022, 1:36:04 PM
+        App version: 1.0, Build number: 1, SDK: 44.0.0
+        Profile: production, Release channel: Unknown
+        Authored by: mthomps4
+  - None of the above (select another option)
+Looking up credentials configuration for org.name.babygroot...
+? Select what to use for your project: › - Use arrow-keys. Return to submit.
+    [Add a new ASC API Key]
+❯   [Enter an App Specific Password]
+
+- Please enter your Apple app-specific password.
+Learn more: <https://expo.fyi/apple-app-specific-password>
+This option will be deprecated soon. You will still be able to provide your password with the EXPO_APPLE_APP_SPECIFIC_PASSWORD environment variable.
+✔ Your Apple app-specific password: … *******************
+
+ASC App ID:  1616581395
+Project ID:  8482c23d-2aed-46f1-aacb-8efa56bddddc
+Apple ID:    matt@3wirebuild.com
+
+✔ Scheduled iOS submission
+
+Submission details: <https://expo.dev/accounts/mthomps4/projects/baby-groot/submissions/1b3b0c20-1400-4662-beb8-45ec46bb0fcc>
+
+Waiting for submission to complete. You can press Ctrl+C to exit.
+⠼ Submitting your app to Apple App Store Connect: submission in progress
+
+***
+
+OOOPS... added APP ICON
+
+### android
