@@ -16,13 +16,12 @@
         "autoIncrement": "version"
       }
     },
-    "local": {
+    "simulator": {
       "extends": "base",
       "distribution": "internal",
       "android": {
         "gradleCommand": ":app:assembleDebug",
-        "buildType": "apk",
-        "developmentClient": true
+        "buildType": "apk"
       },
       "ios": {
         "buildConfiguration": "Debug",
@@ -61,8 +60,24 @@
     "production": {}
   },
   "submit": {
-    "preview": {},
-    "staging": {},
-    "production": {}
+    "preview": {
+      "ios": {
+        "buildConfiguration": "Debug",
+        "bundleIdentifier": "org.name.babygroot.preview"
+      },
+      "android": {
+        "applicationId": "com.babygroot.preview",
+        "track": "internal"
+      }
+    },
+    "staging": {
+      "ios": {
+        "bundleIdentifier": "org.name.babygroot.staging"
+      },
+      "android": {
+        "applicationId": "com.babygroot.staging",
+        "track": "internal"
+      }
+    }
   }
 }
