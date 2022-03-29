@@ -52,10 +52,17 @@
         "APP_ENV": "preview"
       }
     },
+    "staging": {
+      "extends": "base",
+      "env": {
+        "APP_ENV": "staging"
+      }
+    },
     "production": {}
   },
   "submit": {
     "preview": {},
+    "staging": {},
     "production": {}
   }
 }

@@ -155,4 +155,7 @@ OOOPS... added APP ICON
 - built
 - auto submitted :tada:
 
+UPDATE: added `autoIncrement: version` to eas
+> Bumping expo.version from 2.0.1 to 2.0.2
+
 ### android
