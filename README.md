@@ -104,7 +104,7 @@ Not the focus of this Repo... Moving on.
 
 ## Deploy to Store
 
-### ios
+### ios - take 2
 
 - add preview profile to eas.json submit
 - `eas submit -p ios --profile preview`
@@ -158,4 +158,20 @@ OOOPS... added APP ICON
 UPDATE: added `autoIncrement: version` to eas
 > Bumping expo.version from 2.0.1 to 2.0.2
 
-### android
+### android - take 2
+
+FIRE
+
+## Killed the first round with fire... take 2
+
+### ios - take 3
+
+- `reverted/removed variant specifics`
+- `eas build -p ios --profile preview`
+- Do you want to log into Apple (Y)
+- Generate new Apple Distribution Cert (Y)
+- Select Device for ADHOC build (me)
+- Would you like push notifications (Y)
+  - Chose existing key
+- Expo auto bumped version from 2.0.4 to 2.0.5
+- Build queued...
