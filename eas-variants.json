@@ -33,6 +33,7 @@
     },
     "development": {
       "extends": "base",
+      "channel": "development",
       "distribution": "internal",
       "android": {
         "gradleCommand": ":app:assembleDebug"
@@ -46,6 +47,7 @@
     },
     "preview": {
       "extends": "base",
+      "channel": "preview",
       "distribution": "internal",
       "env": {
         "APP_ENV": "preview"
@@ -53,11 +55,18 @@
     },
     "alpha": {
       "extends": "base",
+      "channel": "alpha",
       "env": {
         "APP_ENV": "alpha"
       }
     },
-    "production": {}
+    "production": {
+      "extends": "base",
+      "channel": "production",
+      "env": {
+        "APP_ENV": "production"
+      }
+    }
   },
   "submit": {
     "development": {
