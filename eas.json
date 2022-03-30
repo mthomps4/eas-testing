@@ -8,12 +8,12 @@
       "yarn": "1.22.10",
       "android": {
         "image": "latest",
-        "autoIncrement": "version"
+        "autoIncrement": "versionCode"
       },
       "ios": {
         "image": "latest",
         "cocoapods": "1.11.2",
-        "autoIncrement": "version"
+        "autoIncrement": "buildNumber"
       }
     },
     "simulator": {
