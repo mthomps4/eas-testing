@@ -10,7 +10,7 @@ export default function App() {
   const identifier =
     Platform.OS === "ios"
       ? Constants.manifest?.ios?.bundleIdentifier
-      : Constants.manifest?.android.versionCode;
+      : Constants.manifest?.android?.versionCode;
 
   if (!assets && !error) {
     return (
