@@ -60,10 +60,34 @@
     "production": {}
   },
   "submit": {
-    "development": {},
-    "preview": {},
-    "alpha": {},
-    "production": {}
+    "development": {
+      "ios": {
+        "buildConfiguration": "Debug",
+        "bundleIdentifier": "org.name.babygroot.dev"
+      },
+      "android": {
+        "applicationId": "com.babygroot.dev",
+        "track": "internal"
+      }
+    },
+    "preview": {
+      "ios": {
+        "buildConfiguration": "Debug",
+        "bundleIdentifier": "org.name.babygroot.preview"
+      },
+      "android": {
+        "applicationId": "com.babygroot.preview",
+        "track": "internal"
+      }
+    },
+    "alpha": {
+      "ios": {
+        "bundleIdentifier": "org.name.babygroot.alpha"
+      },
+      "android": {
+        "applicationId": "com.babygroot.alpha",
+        "track": "alpha"
+      }
     }
   }
-
+}
