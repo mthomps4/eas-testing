@@ -7,13 +7,11 @@
       "node": "16.13.1",
       "yarn": "1.22.10",
       "android": {
-        "image": "latest",
-        "autoIncrement": "versionCode"
+        "image": "latest"
       },
       "ios": {
         "image": "latest",
-        "cocoapods": "1.11.2",
-        "autoIncrement": "buildNumber"
+        "cocoapods": "1.11.2"
       }
     },
     "simulator": {
@@ -68,14 +66,23 @@
       },
       "ios": {
         "scheme": "babygroot-alpha",
-        "buildConfiguration": "Release"
+        "buildConfiguration": "Release",
+        "autoIncrement": "buildNumber"
+      },
+      "android": {
+        "autoIncrement": "versionCode"
+
       }
     },
     "production": {
       "channel": "production",
       "ios": {
         "scheme": "babygroot",
-        "buildConfiguration": "Release"
+        "buildConfiguration": "Release",
+        "autoIncrement": "buildNumber"
+      },
+      "android": {
+        "autoIncrement": "versionCode"
       }
     }
   },
