@@ -60,8 +60,6 @@
     "production": {}
   },
   "submit": {
-    "development": {},
-    "preview": {},
     "alpha": {},
     "production": {}
     }
