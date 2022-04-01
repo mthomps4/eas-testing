@@ -58,9 +58,6 @@
       "ios": {
         "scheme": "babygroot-preview",
         "buildConfiguration": "Release"
-      },
-      "android": {
-        "buildType": ":app:assembleRelease"
       }
     },
     "alpha": {
@@ -72,9 +69,6 @@
       "ios": {
         "scheme": "babygroot-alpha",
         "buildConfiguration": "Release"
-      },
-      "android": {
-        "buildType": ":app:assembleRelease"
       }
     },
     "production": {
@@ -82,9 +76,6 @@
       "ios": {
         "scheme": "babygroot",
         "buildConfiguration": "Release"
-      },
-      "android": {
-        "buildType": ":app:buildRelease"
       }
     }
   },
