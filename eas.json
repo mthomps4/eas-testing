@@ -26,7 +26,8 @@
       },
       "ios": {
         "buildConfiguration": "Debug",
-        "simulator": true
+        "simulator": true,
+        "scheme": "babygroot-sim"
       },
       "env": {
         "APP_ENV": "local"
@@ -40,7 +41,8 @@
         "gradleCommand": ":app:assembleDebug"
       },
       "ios": {
-        "buildConfiguration": "Debug"
+        "buildConfiguration": "Debug",
+        "scheme": "babygroot-development"
       },
       "env": {
         "APP_ENV": "development"
@@ -52,6 +54,13 @@
       "distribution": "internal",
       "env": {
         "APP_ENV": "preview"
+      },
+      "ios": {
+        "scheme": "babygroot-preview",
+        "buildConfiguration": "Release"
+      },
+      "android": {
+        "buildType": ":app:assembleRelease"
       }
     },
     "alpha": {
@@ -59,10 +68,24 @@
       "channel": "alpha",
       "env": {
         "APP_ENV": "alpha"
+      },
+      "ios": {
+        "scheme": "babygroot-alpha",
+        "buildConfiguration": "Release"
+      },
+      "android": {
+        "buildType": ":app:assembleRelease"
       }
     },
     "production": {
-      "channel": "production"
+      "channel": "production",
+      "ios": {
+        "scheme": "babygroot",
+        "buildConfiguration": "Release"
+      },
+      "android": {
+        "buildType": ":app:buildRelease"
+      }
     }
   },
   "submit": {
