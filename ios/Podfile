@@ -46,22 +46,15 @@ abstract_target 'common' do
     end
 
     # TestFlight Builds
-    target 'babygroot' do
-    end
-
-    target 'babygroot-alpha' do
-    end
+    target 'babygroot'
+    target 'babygroot-alpha'
 
     # EAS/Expo Profile Install
-    target 'babygroot-preview' do
-    end
-
-    target 'babygroot-development' do
-    end
+    target 'babygroot-preview'
+    target 'babygroot-development'
 
     # Local Download for Simulator
-    target 'babygroot-sim' do
-    end
+    target 'babygroot-sim'
   end
 
   post_integrate do |installer|

@@ -1,21 +1,21 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View, Image, Platform } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import { useAssets } from "expo-asset";
 import Constants from "expo-constants";
 
 export default function App() {
   const [assets, error] = useAssets(require("./assets/baby_groot.png"));
 
-  const buildNumber =
-    Platform.OS === "ios"
-      ? Constants.manifest?.ios?.buildNumber
-      : Constants.manifest?.android?.versionCode;
+  // const buildNumber =
+  //   Platform.OS === "ios"
+  //     ? Constants.manifest?.ios?.buildNumber
+  //     : Constants.manifest?.android?.versionCode;
 
-  const identifier =
-    Platform.OS === "ios"
-      ? Constants.manifest?.ios?.bundleIdentifier
-      : Constants.manifest?.android?.publishBundlePath;
+  // const identifier =
+  //   Platform.OS === "ios"
+  //     ? Constants.manifest?.ios?.bundleIdentifier
+  //     : Constants.manifest?.android?.publishBundlePath; // not right
 
   if (!assets && !error) {
     return (
