@@ -15,7 +15,7 @@ rescue StandardError
 end
 
 # target 'babygroot' do
-abstract_target 'common' do
+abstract_target 'shared' do
   use_expo_modules!
   config = use_native_modules!
 
@@ -30,6 +30,24 @@ abstract_target 'common' do
   #   use_flipper!('Flipper' => '0.75.1', 'Flipper-Folly' => '2.5.3', 'Flipper-RSocket' => '1.3.1')
   # end
 
+  # TestFlight Builds
+  target 'babygroot' do
+  end
+
+  target 'babygroot-alpha' do
+  end
+
+  # EAS/Expo Profile Install
+  target 'babygroot-preview' do
+  end
+
+  target 'babygroot-development' do
+  end
+
+  # Local Download for Simulator
+  target 'babygroot-sim' do
+  end
+
   post_install do |installer|
     react_native_post_install(installer)
 
@@ -43,23 +61,6 @@ abstract_target 'common' do
           target.build_phases.move(build_phase, 0)
         end
       end
-    end
-
-    # TestFlight Builds
-    target 'babygroot' do
-    end
-
-    target 'babygroot-alpha' do
-    end
-
-    # EAS/Expo Profile Install
-    target 'babygroot-preview' do
-    end
-    target 'babygroot-development' do
-    end
-
-    # Local Download for Simulator
-    target 'babygroot-sim' do
     end
   end
 
