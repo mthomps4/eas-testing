@@ -11,31 +11,40 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		96905EF65AED1B983A6B3ABC /* libPods-babygroot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-babygroot.a */; };
+		7ED39B7902912567DDF8738C /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B81CDFA540659EBC4F784D /* ExpoModulesProvider.swift */; };
+		97929CB898F539AA2DF146D2 /* libPods-shared-babygroot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 484D9A111BF8FF472E71EA93 /* libPods-shared-babygroot.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		DF3F483227F74B86000B434A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		DF3F483327F74B86000B434A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		DF3F483427F74B86000B434A /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
-		DF3F483627F74B86000B434A /* libPods-babygroot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-babygroot.a */; };
 		DF3F483827F74B86000B434A /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		DF3F483927F74B86000B434A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		DF3F483A27F74B86000B434A /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		E96B569899AC94A471F148A8 /* libPods-shared-babygroot-development.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9827134979CDFF6B578321 /* libPods-shared-babygroot-development.a */; };
+		FCABDAFEFA24565215159905 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C0A2B602CE34D78F8C8B3 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		137E7AD942DBADFE41F0709A /* Pods-shared-babygroot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot.release.xcconfig"; path = "Target Support Files/Pods-shared-babygroot/Pods-shared-babygroot.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* babygroot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = babygroot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = babygroot/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = babygroot/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = babygroot/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = babygroot/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = babygroot/main.m; sourceTree = "<group>"; };
-		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-babygroot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-babygroot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		148C0A2B602CE34D78F8C8B3 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-shared-babygroot-development/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		3C9827134979CDFF6B578321 /* libPods-shared-babygroot-development.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shared-babygroot-development.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		484D9A111BF8FF472E71EA93 /* libPods-shared-babygroot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shared-babygroot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2E3173556A471DD304B334 /* Pods-babygroot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babygroot.debug.xcconfig"; path = "Target Support Files/Pods-babygroot/Pods-babygroot.debug.xcconfig"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-babygroot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babygroot.release.xcconfig"; path = "Target Support Files/Pods-babygroot/Pods-babygroot.release.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = babygroot/SplashScreen.storyboard; sourceTree = "<group>"; };
+		B7B81CDFA540659EBC4F784D /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-shared-babygroot/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		C8319B52EADF6B218519EB09 /* Pods-shared-babygroot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot.debug.xcconfig"; path = "Target Support Files/Pods-shared-babygroot/Pods-shared-babygroot.debug.xcconfig"; sourceTree = "<group>"; };
+		CBC4C271AAFE2E3B955450D2 /* Pods-shared-babygroot-development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-development.debug.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-development/Pods-shared-babygroot-development.debug.xcconfig"; sourceTree = "<group>"; };
+		D04D4195D7657AB04F255B8C /* Pods-shared-babygroot-development.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-development.release.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-development/Pods-shared-babygroot-development.release.xcconfig"; sourceTree = "<group>"; };
 		DF3F484027F74B86000B434A /* babygroot-development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "babygroot-development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3F484127F74B86000B434A /* babygroot copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "babygroot copy-Info.plist"; path = "/Users/mthomps4/Code/baby-groot/ios/babygroot copy-Info.plist"; sourceTree = "<absolute>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -47,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96905EF65AED1B983A6B3ABC /* libPods-babygroot.a in Frameworks */,
+				97929CB898F539AA2DF146D2 /* libPods-shared-babygroot.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF3F483627F74B86000B434A /* libPods-babygroot.a in Frameworks */,
+				E96B569899AC94A471F148A8 /* libPods-shared-babygroot-development.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-babygroot.a */,
+				484D9A111BF8FF472E71EA93 /* libPods-shared-babygroot.a */,
+				3C9827134979CDFF6B578321 /* libPods-shared-babygroot-development.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,8 +132,17 @@
 			isa = PBXGroup;
 			children = (
 				FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */,
+				B7B81CDFA540659EBC4F784D /* ExpoModulesProvider.swift */,
 			);
 			name = babygroot;
+			sourceTree = "<group>";
+		};
+		A96421D549D67EA3D16630FB /* babygroot-development */ = {
+			isa = PBXGroup;
+			children = (
+				148C0A2B602CE34D78F8C8B3 /* ExpoModulesProvider.swift */,
+			);
+			name = "babygroot-development";
 			sourceTree = "<group>";
 		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
@@ -140,6 +159,10 @@
 			children = (
 				6C2E3173556A471DD304B334 /* Pods-babygroot.debug.xcconfig */,
 				7A4D352CD337FB3A3BF06240 /* Pods-babygroot.release.xcconfig */,
+				C8319B52EADF6B218519EB09 /* Pods-shared-babygroot.debug.xcconfig */,
+				137E7AD942DBADFE41F0709A /* Pods-shared-babygroot.release.xcconfig */,
+				CBC4C271AAFE2E3B955450D2 /* Pods-shared-babygroot-development.debug.xcconfig */,
+				D04D4195D7657AB04F255B8C /* Pods-shared-babygroot-development.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -148,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				92DBD88DE9BF7D494EA9DA96 /* babygroot */,
+				A96421D549D67EA3D16630FB /* babygroot-development */,
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
@@ -286,7 +310,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-babygroot-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-shared-babygroot-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -299,7 +323,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-babygroot/Pods-babygroot-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-shared-babygroot/Pods-shared-babygroot-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
@@ -310,7 +334,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-babygroot/Pods-babygroot-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shared-babygroot/Pods-shared-babygroot-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF3F482F27F74B86000B434A /* [CP] Check Pods Manifest.lock */ = {
@@ -328,7 +352,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-babygroot-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-shared-babygroot-development-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -374,7 +398,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-babygroot/Pods-babygroot-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-shared-babygroot-development/Pods-shared-babygroot-development-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
@@ -385,7 +409,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-babygroot/Pods-babygroot-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shared-babygroot-development/Pods-shared-babygroot-development-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -417,6 +441,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
+				7ED39B7902912567DDF8738C /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +452,7 @@
 				DF3F483227F74B86000B434A /* AppDelegate.m in Sources */,
 				DF3F483327F74B86000B434A /* main.m in Sources */,
 				DF3F483427F74B86000B434A /* ExpoModulesProvider.swift in Sources */,
+				FCABDAFEFA24565215159905 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +461,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C2E3173556A471DD304B334 /* Pods-babygroot.debug.xcconfig */;
+			baseConfigurationReference = C8319B52EADF6B218519EB09 /* Pods-shared-babygroot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -468,7 +494,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A4D352CD337FB3A3BF06240 /* Pods-babygroot.release.xcconfig */;
+			baseConfigurationReference = 137E7AD942DBADFE41F0709A /* Pods-shared-babygroot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -607,7 +633,7 @@
 		};
 		DF3F483E27F74B86000B434A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C2E3173556A471DD304B334 /* Pods-babygroot.debug.xcconfig */;
+			baseConfigurationReference = CBC4C271AAFE2E3B955450D2 /* Pods-shared-babygroot-development.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				CLANG_ENABLE_MODULES = YES;
@@ -640,7 +666,7 @@
 		};
 		DF3F483F27F74B86000B434A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A4D352CD337FB3A3BF06240 /* Pods-babygroot.release.xcconfig */;
+			baseConfigurationReference = D04D4195D7657AB04F255B8C /* Pods-shared-babygroot-development.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				CLANG_ENABLE_MODULES = YES;
