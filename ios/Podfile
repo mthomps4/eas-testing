@@ -38,8 +38,8 @@ abstract_target 'shared' do
   # end
 
   # EAS/Expo Profile Install
-  # target 'babygroot-preview' do
-  # end
+  target 'babygroot-preview' do
+  end
 
   target 'babygroot-development' do
   end

@@ -19,6 +19,13 @@
 		DF3F483827F74B86000B434A /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		DF3F483927F74B86000B434A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		DF3F483A27F74B86000B434A /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		DF5D82AF27FCC0010051E1F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		DF5D82B027FCC0010051E1F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		DF5D82B127FCC0010051E1F2 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B81CDFA540659EBC4F784D /* ExpoModulesProvider.swift */; };
+		DF5D82B327FCC0010051E1F2 /* libPods-shared-babygroot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 484D9A111BF8FF472E71EA93 /* libPods-shared-babygroot.a */; };
+		DF5D82B527FCC0010051E1F2 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		DF5D82B627FCC0010051E1F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		DF5D82B727FCC0010051E1F2 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		E96B569899AC94A471F148A8 /* libPods-shared-babygroot-development.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C9827134979CDFF6B578321 /* libPods-shared-babygroot-development.a */; };
 		FCABDAFEFA24565215159905 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C0A2B602CE34D78F8C8B3 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +51,7 @@
 		CBC4C271AAFE2E3B955450D2 /* Pods-shared-babygroot-development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-development.debug.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-development/Pods-shared-babygroot-development.debug.xcconfig"; sourceTree = "<group>"; };
 		D04D4195D7657AB04F255B8C /* Pods-shared-babygroot-development.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-development.release.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-development/Pods-shared-babygroot-development.release.xcconfig"; sourceTree = "<group>"; };
 		DF3F484027F74B86000B434A /* babygroot-development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "babygroot-development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5D82BD27FCC0010051E1F2 /* babygroot-preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "babygroot-preview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-babygroot/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +70,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E96B569899AC94A471F148A8 /* libPods-shared-babygroot-development.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5D82B227FCC0010051E1F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5D82B327FCC0010051E1F2 /* libPods-shared-babygroot.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +136,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* babygroot.app */,
 				DF3F484027F74B86000B434A /* babygroot-development.app */,
+				DF5D82BD27FCC0010051E1F2 /* babygroot-preview.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +234,27 @@
 			productReference = DF3F484027F74B86000B434A /* babygroot-development.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DF5D82AB27FCC0010051E1F2 /* babygroot-preview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF5D82BA27FCC0010051E1F2 /* Build configuration list for PBXNativeTarget "babygroot-preview" */;
+			buildPhases = (
+				DF5D82AC27FCC0010051E1F2 /* [CP] Check Pods Manifest.lock */,
+				DF5D82AD27FCC0010051E1F2 /* Start Packager */,
+				DF5D82AE27FCC0010051E1F2 /* Sources */,
+				DF5D82B227FCC0010051E1F2 /* Frameworks */,
+				DF5D82B427FCC0010051E1F2 /* Resources */,
+				DF5D82B827FCC0010051E1F2 /* Bundle React Native code and images */,
+				DF5D82B927FCC0010051E1F2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "babygroot-preview";
+			productName = babygroot;
+			productReference = DF5D82BD27FCC0010051E1F2 /* babygroot-preview.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,6 +268,9 @@
 						ProvisioningStyle = Manual;
 					};
 					DF3F482E27F74B86000B434A = {
+						ProvisioningStyle = Manual;
+					};
+					DF5D82AB27FCC0010051E1F2 = {
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -249,6 +290,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* babygroot */,
 				DF3F482E27F74B86000B434A /* babygroot-development */,
+				DF5D82AB27FCC0010051E1F2 /* babygroot-preview */,
 			);
 		};
 /* End PBXProject section */
@@ -271,6 +313,16 @@
 				DF3F483827F74B86000B434A /* Expo.plist in Resources */,
 				DF3F483927F74B86000B434A /* Images.xcassets in Resources */,
 				DF3F483A27F74B86000B434A /* SplashScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5D82B427FCC0010051E1F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5D82B527FCC0010051E1F2 /* Expo.plist in Resources */,
+				DF5D82B627FCC0010051E1F2 /* Images.xcassets in Resources */,
+				DF5D82B727FCC0010051E1F2 /* SplashScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +460,81 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shared-babygroot-development/Pods-shared-babygroot-development-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DF5D82AC27FCC0010051E1F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shared-babygroot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF5D82AD27FCC0010051E1F2 /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > `node --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/.packager.env'\"`\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open `node --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/launchPackager.command'\"` || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF5D82B827FCC0010051E1F2 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\n`node --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n";
+		};
+		DF5D82B927FCC0010051E1F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shared-babygroot/Pods-shared-babygroot-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shared-babygroot/Pods-shared-babygroot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,6 +574,16 @@
 				DF3F483227F74B86000B434A /* AppDelegate.m in Sources */,
 				DF3F483327F74B86000B434A /* main.m in Sources */,
 				FCABDAFEFA24565215159905 /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5D82AE27FCC0010051E1F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5D82AF27FCC0010051E1F2 /* AppDelegate.m in Sources */,
+				DF5D82B027FCC0010051E1F2 /* main.m in Sources */,
+				DF5D82B127FCC0010051E1F2 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +822,66 @@
 			};
 			name = Release;
 		};
+		DF5D82BB27FCC0010051E1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8319B52EADF6B218519EB09 /* Pods-shared-babygroot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconPreview;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = babygroot/babygroot.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DISPLAY_NAME = "Baby Groot (Preview)";
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = babygroot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.name.babygroot2.preview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		DF5D82BC27FCC0010051E1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 137E7AD942DBADFE41F0709A /* Pods-shared-babygroot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconPreview;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = babygroot/babygroot.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DISPLAY_NAME = "Baby Groot (Preview)";
+				INFOPLIST_FILE = babygroot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.name.babygroot2.preview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -711,6 +908,15 @@
 			buildConfigurations = (
 				DF3F483E27F74B86000B434A /* Debug */,
 				DF3F483F27F74B86000B434A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF5D82BA27FCC0010051E1F2 /* Build configuration list for PBXNativeTarget "babygroot-preview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF5D82BB27FCC0010051E1F2 /* Debug */,
+				DF5D82BC27FCC0010051E1F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
