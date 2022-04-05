@@ -7,25 +7,25 @@
       "node": "16.13.1",
       "yarn": "1.22.10",
       "android": {
-        "image": "latest",
-        "autoIncrement": "versionCode"
+        "image": "latest"
       },
       "ios": {
         "image": "latest",
-        "cocoapods": "1.11.2",
-        "autoIncrement": "buildNumber"
+        "cocoapods": "1.11.2"
       }
     },
     "simulator": {
       "extends": "base",
       "distribution": "internal",
+      "channel": "simulator",
       "android": {
         "gradleCommand": ":app:assembleDebug",
         "buildType": "apk"
       },
       "ios": {
         "buildConfiguration": "Debug",
-        "simulator": true
+        "simulator": true,
+        "scheme": "babygroot-sim"
       },
       "env": {
         "APP_ENV": "local"
@@ -34,11 +34,13 @@
     "development": {
       "extends": "base",
       "distribution": "internal",
+      "channel": "development",
       "android": {
         "gradleCommand": ":app:assembleDebug"
       },
       "ios": {
-        "buildConfiguration": "Debug"
+        "buildConfiguration": "Debug",
+        "scheme": "babygroot-development"
       },
       "env": {
         "APP_ENV": "development"
@@ -46,18 +48,43 @@
     },
     "preview": {
       "extends": "base",
+      "channel": "preview",
       "distribution": "internal",
       "env": {
         "APP_ENV": "preview"
+      },
+      "ios": {
+        "scheme": "babygroot-preview",
+        "buildConfiguration": "Release"
       }
     },
     "alpha": {
       "extends": "base",
+      "channel": "alpha",
       "env": {
         "APP_ENV": "alpha"
+      },
+      "ios": {
+        "scheme": "babygroot-alpha",
+        "buildConfiguration": "Release",
+        "autoIncrement": "buildNumber"
+      },
+      "android": {
+        "autoIncrement": "versionCode"
+
       }
     },
-    "production": {}
+    "production": {
+      "channel": "production",
+      "ios": {
+        "scheme": "babygroot",
+        "buildConfiguration": "Release",
+        "autoIncrement": "buildNumber"
+      },
+      "android": {
+        "autoIncrement": "versionCode"
+      }
+    }
   },
   "submit": {
     "alpha": {},

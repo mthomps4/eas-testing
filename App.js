@@ -1,16 +1,21 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View, Image, Platform } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import { useAssets } from "expo-asset";
 import Constants from "expo-constants";
 
 export default function App() {
   const [assets, error] = useAssets(require("./assets/baby_groot.png"));
 
-  const identifier =
-    Platform.OS === "ios"
-      ? Constants.manifest?.ios?.bundleIdentifier
-      : Constants.manifest?.android?.versionCode;
+  // const buildNumber =
+  //   Platform.OS === "ios"
+  //     ? Constants.manifest?.ios?.buildNumber
+  //     : Constants.manifest?.android?.versionCode;
+
+  // const identifier =
+  //   Platform.OS === "ios"
+  //     ? Constants.manifest?.ios?.bundleIdentifier
+  //     : Constants.manifest?.android?.publishBundlePath; // not right
 
   if (!assets && !error) {
     return (
@@ -21,13 +26,23 @@ export default function App() {
   }
   const [logo] = assets;
 
+  const stuff = JSON.stringify(Constants.manifest, null, 2);
+
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
       <Image source={logo} style={styles.logo} />
-      <Text style={styles.header}>{Constants.manifest.name}</Text>
-      <Text style={styles.subheader}>{Constants.manifest.version}</Text>
-      <Text style={styles.text}>{identifier || "local"}</Text>
+      <View
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+          backgroundColor: "#ccc",
+        }}
+      >
+        <Text>{stuff}</Text>
+      </View>
     </View>
   );
 }
