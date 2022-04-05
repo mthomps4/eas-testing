@@ -46,7 +46,6 @@
 		CBC4C271AAFE2E3B955450D2 /* Pods-shared-babygroot-development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-development.debug.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-development/Pods-shared-babygroot-development.debug.xcconfig"; sourceTree = "<group>"; };
 		D04D4195D7657AB04F255B8C /* Pods-shared-babygroot-development.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-development.release.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-development/Pods-shared-babygroot-development.release.xcconfig"; sourceTree = "<group>"; };
 		DF3F484027F74B86000B434A /* babygroot-development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "babygroot-development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF3F484127F74B86000B434A /* babygroot copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "babygroot copy-Info.plist"; path = "/Users/mthomps4/Code/baby-groot/ios/babygroot copy-Info.plist"; sourceTree = "<absolute>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-babygroot/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,7 +111,6 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
-				DF3F484127F74B86000B434A /* babygroot copy-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
