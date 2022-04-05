@@ -42,8 +42,6 @@ abstract_target 'shared' do
   # end
 
   target 'babygroot-development' do
-    use_expo_modules!
-    config = use_native_modules!
   end
 
   # Local Download for Simulator
