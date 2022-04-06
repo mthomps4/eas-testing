@@ -49,7 +49,7 @@ if (profile) {
         },
       },
       ios: {
-        buildNumber: "7", // GitHash or buildId Combo? Manual bump for now config.js cannot autoIncrement
+        buildNumber: "8", // GitHash or buildId Combo? Manual bump for now config.js cannot autoIncrement
       },
     },
   };
