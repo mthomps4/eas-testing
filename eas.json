@@ -18,6 +18,7 @@
       "extends": "base",
       "distribution": "internal",
       "channel": "simulator",
+      "developmentClient": true,
       "android": {
         "gradleCommand": ":app:assembleDebug",
         "buildType": "apk"
@@ -35,6 +36,7 @@
       "extends": "base",
       "distribution": "internal",
       "channel": "development",
+      "developmentClient": true,
       "android": {
         "gradleCommand": ":app:assembleDebug"
       },
