@@ -13,7 +13,6 @@ import Constants from "expo-constants";
 import "expo-dev-client"; // TODO: make this conditional
 
 const debugMode = Constants.manifest?.extra?.debug;
-
 console.log({ debugMode });
 
 // if (debugMode) {
@@ -42,7 +41,8 @@ export default function App() {
   }
   const [logo] = assets;
 
-  const stuff = JSON.stringify(Constants.manifest, null, 2);
+  const manifest = JSON.stringify(Constants.manifest, null, 2);
+  const manifest2 = JSON.stringify(Constants.manifest2, null, 2);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -58,7 +58,8 @@ export default function App() {
             backgroundColor: "#ccc",
           }}
         >
-          <Text>{stuff}</Text>
+          <Text>{manifest}</Text>
+          <Text>{manifest2}</Text>
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -4,11 +4,11 @@
 // They are not set when evaluating app.config locally
 
 // const buildId = process.env.EAS_BUILD_ID || "local";
-// const profile = process.env.EAS_BUILD_PROFILE || "local";
+// const profile2 = process.env.EAS_BUILD_PROFILE || "local";
 // const gitHash = process.env.EAS_BUILD_COMMIT_HASH || "local";
 // const isCI = process.env.CI; // 1 or 0
 // console.log("\n\n\n\n\n");
-// console.log({ buildId, profile, gitHash, isCI });
+// console.log({ buildId, profile2, gitHash, isCI });
 // console.log("\n\n\n\n\n");
 
 // When running `eas build -p ios --profile alpha :thinking:
