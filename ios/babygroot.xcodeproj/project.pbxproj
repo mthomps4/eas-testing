@@ -13,9 +13,18 @@
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		528FC64B6120C7AE1A85B3BC /* libPods-shared-babygroot-preview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CEF5193F7C103A6A7EB9BE7 /* libPods-shared-babygroot-preview.a */; };
 		7ED39B7902912567DDF8738C /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B81CDFA540659EBC4F784D /* ExpoModulesProvider.swift */; };
+		8066CDFC998FAB5FAB60844C /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584530FB932CDAC8365A6B1 /* ExpoModulesProvider.swift */; };
 		97929CB898F539AA2DF146D2 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		B370536B679903CA3D689B85 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28EBAD5D7A6F61CE045DA8 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		C466C7E5BB894EBDCAE21C13 /* libPods-shared-babygroot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C10876CD25CD23589F05A98 /* libPods-shared-babygroot.a */; };
+		CA5130D591CF203D121B3C37 /* libPods-shared-babygroot-alpha.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9449EC0F1223D693F065B502 /* libPods-shared-babygroot-alpha.a */; };
+		DF2E961D27FD365D00DA90BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		DF2E961E27FD365D00DA90BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		DF2E962127FD365D00DA90BC /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		DF2E962327FD365D00DA90BC /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		DF2E962427FD365D00DA90BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		DF2E962527FD365D00DA90BC /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		DF3F483227F74B86000B434A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		DF3F483327F74B86000B434A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		DF3F483827F74B86000B434A /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
@@ -42,16 +51,23 @@
 		148C0A2B602CE34D78F8C8B3 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-shared-babygroot-development/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		1CEF5193F7C103A6A7EB9BE7 /* libPods-shared-babygroot-preview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shared-babygroot-preview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9827134979CDFF6B578321 /* libPods-shared-babygroot-development.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shared-babygroot-development.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C10876CD25CD23589F05A98 /* libPods-shared-babygroot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shared-babygroot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B477018D33607A34341F2AB /* Pods-shared-babygroot-alpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-alpha.release.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-alpha/Pods-shared-babygroot-alpha.release.xcconfig"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-babygroot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babygroot.debug.xcconfig"; path = "Target Support Files/Pods-babygroot/Pods-babygroot.debug.xcconfig"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-babygroot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-babygroot.release.xcconfig"; path = "Target Support Files/Pods-babygroot/Pods-babygroot.release.xcconfig"; sourceTree = "<group>"; };
+		7D68C377A4B6558F00B76F27 /* Pods-shared-babygroot-alpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-alpha.debug.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-alpha/Pods-shared-babygroot-alpha.debug.xcconfig"; sourceTree = "<group>"; };
 		903A951E4ACA008AC153DC20 /* Pods-shared-babygroot-preview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-preview.release.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-preview/Pods-shared-babygroot-preview.release.xcconfig"; sourceTree = "<group>"; };
+		9449EC0F1223D693F065B502 /* libPods-shared-babygroot-alpha.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shared-babygroot-alpha.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A28EBAD5D7A6F61CE045DA8 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-shared-babygroot-preview/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = babygroot/SplashScreen.storyboard; sourceTree = "<group>"; };
+		B584530FB932CDAC8365A6B1 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-shared-babygroot-alpha/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		B7B81CDFA540659EBC4F784D /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-shared-babygroot/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		C8319B52EADF6B218519EB09 /* Pods-shared-babygroot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot.debug.xcconfig"; path = "Target Support Files/Pods-shared-babygroot/Pods-shared-babygroot.debug.xcconfig"; sourceTree = "<group>"; };
 		CBC4C271AAFE2E3B955450D2 /* Pods-shared-babygroot-development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-development.debug.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-development/Pods-shared-babygroot-development.debug.xcconfig"; sourceTree = "<group>"; };
 		D04D4195D7657AB04F255B8C /* Pods-shared-babygroot-development.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-development.release.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-development/Pods-shared-babygroot-development.release.xcconfig"; sourceTree = "<group>"; };
+		DF2E962B27FD365D00DA90BC /* babygroot-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "babygroot-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2E962C27FD365D00DA90BC /* babygroot copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "babygroot copy-Info.plist"; path = "/Users/mthomps4/Code/baby-groot/ios/babygroot copy-Info.plist"; sourceTree = "<absolute>"; };
 		DF3F484027F74B86000B434A /* babygroot-development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "babygroot-development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5D82BD27FCC0010051E1F2 /* babygroot-preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "babygroot-preview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A0DDE6DAE2484F8F7B2DEE /* Pods-shared-babygroot-preview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shared-babygroot-preview.debug.xcconfig"; path = "Target Support Files/Pods-shared-babygroot-preview/Pods-shared-babygroot-preview.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +81,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				97929CB898F539AA2DF146D2 /* (null) in Frameworks */,
+				C466C7E5BB894EBDCAE21C13 /* libPods-shared-babygroot.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2E962027FD365D00DA90BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2E962127FD365D00DA90BC /* (null) in Frameworks */,
+				CA5130D591CF203D121B3C37 /* libPods-shared-babygroot-alpha.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +134,8 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				3C9827134979CDFF6B578321 /* libPods-shared-babygroot-development.a */,
 				1CEF5193F7C103A6A7EB9BE7 /* libPods-shared-babygroot-preview.a */,
+				4C10876CD25CD23589F05A98 /* libPods-shared-babygroot.a */,
+				9449EC0F1223D693F065B502 /* libPods-shared-babygroot-alpha.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,6 +156,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+				DF2E962C27FD365D00DA90BC /* babygroot copy-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -140,6 +169,7 @@
 				13B07F961A680F5B00A75B9A /* babygroot.app */,
 				DF3F484027F74B86000B434A /* babygroot-development.app */,
 				DF5D82BD27FCC0010051E1F2 /* babygroot-preview.app */,
+				DF2E962B27FD365D00DA90BC /* babygroot-alpha.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +199,14 @@
 			name = "babygroot-preview";
 			sourceTree = "<group>";
 		};
+		B9CABB96ACA1F61D14A0AC66 /* babygroot-alpha */ = {
+			isa = PBXGroup;
+			children = (
+				B584530FB932CDAC8365A6B1 /* ExpoModulesProvider.swift */,
+			);
+			name = "babygroot-alpha";
+			sourceTree = "<group>";
+		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +227,8 @@
 				D04D4195D7657AB04F255B8C /* Pods-shared-babygroot-development.release.xcconfig */,
 				E1A0DDE6DAE2484F8F7B2DEE /* Pods-shared-babygroot-preview.debug.xcconfig */,
 				903A951E4ACA008AC153DC20 /* Pods-shared-babygroot-preview.release.xcconfig */,
+				7D68C377A4B6558F00B76F27 /* Pods-shared-babygroot-alpha.debug.xcconfig */,
+				6B477018D33607A34341F2AB /* Pods-shared-babygroot-alpha.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -199,6 +239,7 @@
 				92DBD88DE9BF7D494EA9DA96 /* babygroot */,
 				A96421D549D67EA3D16630FB /* babygroot-development */,
 				B75C236789518BE66D3440DA /* babygroot-preview */,
+				B9CABB96ACA1F61D14A0AC66 /* babygroot-alpha */,
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
@@ -225,6 +266,27 @@
 			name = babygroot;
 			productName = babygroot;
 			productReference = 13B07F961A680F5B00A75B9A /* babygroot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF2E961927FD365D00DA90BC /* babygroot-alpha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF2E962827FD365D00DA90BC /* Build configuration list for PBXNativeTarget "babygroot-alpha" */;
+			buildPhases = (
+				DF2E961A27FD365D00DA90BC /* [CP] Check Pods Manifest.lock */,
+				DF2E961B27FD365D00DA90BC /* Start Packager */,
+				DF2E961C27FD365D00DA90BC /* Sources */,
+				DF2E962027FD365D00DA90BC /* Frameworks */,
+				DF2E962227FD365D00DA90BC /* Resources */,
+				DF2E962627FD365D00DA90BC /* Bundle React Native code and images */,
+				DF2E962727FD365D00DA90BC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "babygroot-alpha";
+			productName = babygroot;
+			productReference = DF2E962B27FD365D00DA90BC /* babygroot-alpha.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DF3F482E27F74B86000B434A /* babygroot-development */ = {
@@ -281,6 +343,9 @@
 						LastSwiftMigration = 1250;
 						ProvisioningStyle = Manual;
 					};
+					DF2E961927FD365D00DA90BC = {
+						ProvisioningStyle = Manual;
+					};
 					DF3F482E27F74B86000B434A = {
 						ProvisioningStyle = Manual;
 					};
@@ -305,6 +370,7 @@
 				13B07F861A680F5B00A75B9A /* babygroot */,
 				DF3F482E27F74B86000B434A /* babygroot-development */,
 				DF5D82AB27FCC0010051E1F2 /* babygroot-preview */,
+				DF2E961927FD365D00DA90BC /* babygroot-alpha */,
 			);
 		};
 /* End PBXProject section */
@@ -317,6 +383,16 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2E962227FD365D00DA90BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2E962327FD365D00DA90BC /* Expo.plist in Resources */,
+				DF2E962427FD365D00DA90BC /* Images.xcassets in Resources */,
+				DF2E962527FD365D00DA90BC /* SplashScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +473,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shared-babygroot/Pods-shared-babygroot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF2E961A27FD365D00DA90BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shared-babygroot-alpha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF2E961B27FD365D00DA90BC /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > `node --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/.packager.env'\"`\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open `node --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/launchPackager.command'\"` || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF2E962627FD365D00DA90BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\n`node --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n";
+		};
+		DF2E962727FD365D00DA90BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-shared-babygroot-alpha/Pods-shared-babygroot-alpha-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shared-babygroot-alpha/Pods-shared-babygroot-alpha-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF3F482F27F74B86000B434A /* [CP] Check Pods Manifest.lock */ = {
@@ -578,6 +729,16 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				7ED39B7902912567DDF8738C /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2E961C27FD365D00DA90BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2E961D27FD365D00DA90BC /* AppDelegate.m in Sources */,
+				DF2E961E27FD365D00DA90BC /* main.m in Sources */,
+				8066CDFC998FAB5FAB60844C /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,6 +937,66 @@
 			};
 			name = Release;
 		};
+		DF2E962927FD365D00DA90BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D68C377A4B6558F00B76F27 /* Pods-shared-babygroot-alpha.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconAlpha;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = babygroot/babygroot.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DISPLAY_NAME = "Baby Groot";
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = babygroot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.name.babygroot2.alpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		DF2E962A27FD365D00DA90BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B477018D33607A34341F2AB /* Pods-shared-babygroot-alpha.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconAlpha;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = babygroot/babygroot.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DISPLAY_NAME = "Baby Groot";
+				INFOPLIST_FILE = babygroot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.name.babygroot2.alpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 		DF3F483E27F74B86000B434A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBC4C271AAFE2E3B955450D2 /* Pods-shared-babygroot-development.debug.xcconfig */;
@@ -913,6 +1134,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF2E962827FD365D00DA90BC /* Build configuration list for PBXNativeTarget "babygroot-alpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2E962927FD365D00DA90BC /* Debug */,
+				DF2E962A27FD365D00DA90BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
