@@ -13,7 +13,7 @@
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		528FC64B6120C7AE1A85B3BC /* libPods-shared-babygroot-preview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CEF5193F7C103A6A7EB9BE7 /* libPods-shared-babygroot-preview.a */; };
 		7ED39B7902912567DDF8738C /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B81CDFA540659EBC4F784D /* ExpoModulesProvider.swift */; };
-		97929CB898F539AA2DF146D2 /* libPods-shared-babygroot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 484D9A111BF8FF472E71EA93 /* libPods-shared-babygroot.a */; };
+		97929CB898F539AA2DF146D2 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		B370536B679903CA3D689B85 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A28EBAD5D7A6F61CE045DA8 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		DF3F483227F74B86000B434A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -23,7 +23,6 @@
 		DF3F483A27F74B86000B434A /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		DF5D82AF27FCC0010051E1F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		DF5D82B027FCC0010051E1F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		DF5D82B127FCC0010051E1F2 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B81CDFA540659EBC4F784D /* ExpoModulesProvider.swift */; };
 		DF5D82B527FCC0010051E1F2 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		DF5D82B627FCC0010051E1F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		DF5D82B727FCC0010051E1F2 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
@@ -65,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97929CB898F539AA2DF146D2 /* libPods-shared-babygroot.a in Frameworks */,
+				97929CB898F539AA2DF146D2 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,7 +597,6 @@
 			files = (
 				DF5D82AF27FCC0010051E1F2 /* AppDelegate.m in Sources */,
 				DF5D82B027FCC0010051E1F2 /* main.m in Sources */,
-				DF5D82B127FCC0010051E1F2 /* ExpoModulesProvider.swift in Sources */,
 				B370536B679903CA3D689B85 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

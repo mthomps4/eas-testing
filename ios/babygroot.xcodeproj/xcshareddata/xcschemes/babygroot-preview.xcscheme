@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DF5D82AB27FCC0010051E1F2"
-               BuildableName = "babygroot copy.app"
+               BuildableName = "babygroot-preview.app"
                BlueprintName = "babygroot-preview"
                ReferencedContainer = "container:babygroot.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF5D82AB27FCC0010051E1F2"
-            BuildableName = "babygroot copy.app"
+            BuildableName = "babygroot-preview.app"
             BlueprintName = "babygroot-preview"
             ReferencedContainer = "container:babygroot.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF5D82AB27FCC0010051E1F2"
-            BuildableName = "babygroot copy.app"
+            BuildableName = "babygroot-preview.app"
             BlueprintName = "babygroot-preview"
             ReferencedContainer = "container:babygroot.xcodeproj">
          </BuildableReference>
