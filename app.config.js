@@ -31,7 +31,8 @@ const profile = process.env.profile;
 let config = {};
 
 if (profile) {
-  const appName = `baby-groot-${profile}`;
+  const isProduction = profile === "production";
+  const appName = isProduction ? "baby-groot" : `baby-groot-${profile}`;
 
   config = {
     expo: {
