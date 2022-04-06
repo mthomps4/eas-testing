@@ -29,7 +29,7 @@
         "scheme": "babygroot-sim"
       },
       "env": {
-        "profile": "simulator",
+        "APP_ENV": "simulator",
         "debug": "true"
       }
     },
@@ -46,7 +46,7 @@
         "scheme": "babygroot-development"
       },
       "env": {
-        "profile": "development",
+        "APP_ENV": "development",
         "debug": "true"
       }
     },
@@ -55,7 +55,7 @@
       "channel": "preview",
       "distribution": "internal",
       "env": {
-        "profile": "preview"
+        "APP_ENV": "preview"
       },
       "ios": {
         "scheme": "babygroot-preview",
@@ -66,7 +66,7 @@
       "extends": "base",
       "channel": "alpha",
       "env": {
-        "profile": "alpha"
+        "APP_ENV": "alpha"
       },
       "ios": {
         "scheme": "babygroot-alpha",
