@@ -8,7 +8,7 @@ const isCI = process.env.CI; // 1 or 0
 const APP_ENV = process.env.APP_ENV || "nope";
 
 console.log("\n\n\n\n\n");
-console.log({ buildId, profile, gitHash, isCI, customEnv });
+console.log({ buildId, profile, gitHash, isCI, APP_ENV });
 console.log("\n\n\n\n\n");
 
 export default {
