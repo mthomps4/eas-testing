@@ -29,7 +29,8 @@
         "scheme": "babygroot-sim"
       },
       "env": {
-        "profile": "local"
+        "profile": "simulator",
+        "debug": "true"
       }
     },
     "development": {
@@ -45,7 +46,8 @@
         "scheme": "babygroot-development"
       },
       "env": {
-        "profile": "development"
+        "profile": "development",
+        "debug": "true"
       }
     },
     "preview": {

@@ -3,12 +3,14 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import { useAssets } from "expo-asset";
 import Constants from "expo-constants";
-
-const debugMode = Constants.manifest?.extra?.debugMode;
-
 import "expo-dev-client"; // TODO: make this conditional
+
+const debugMode = Constants.manifest?.extra?.debug;
+
 console.log({ debugMode });
-// if DEBUG {
+
+// if (debugMode) {
+//   require("expo-dev-client");
 // }
 
 export default function App() {
