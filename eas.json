@@ -28,7 +28,7 @@
         "scheme": "babygroot-sim"
       },
       "env": {
-        "APP_ENV": "local"
+        "profile": "local"
       }
     },
     "development": {
@@ -43,7 +43,7 @@
         "scheme": "babygroot-development"
       },
       "env": {
-        "APP_ENV": "development"
+        "profile": "development"
       }
     },
     "preview": {
@@ -51,7 +51,7 @@
       "channel": "preview",
       "distribution": "internal",
       "env": {
-        "APP_ENV": "preview"
+        "profile": "preview"
       },
       "ios": {
         "scheme": "babygroot-preview",
@@ -62,27 +62,22 @@
       "extends": "base",
       "channel": "alpha",
       "env": {
-        "APP_ENV": "alpha"
+        "profile": "alpha"
       },
       "ios": {
         "scheme": "babygroot-alpha",
-        "buildConfiguration": "Release",
-        "autoIncrement": "buildNumber"
+        "buildConfiguration": "Release"
       },
       "android": {
-        "autoIncrement": "versionCode"
-
       }
     },
     "production": {
       "channel": "production",
       "ios": {
         "scheme": "babygroot",
-        "buildConfiguration": "Release",
-        "autoIncrement": "buildNumber"
+        "buildConfiguration": "Release"
       },
       "android": {
-        "autoIncrement": "versionCode"
       }
     }
   },
