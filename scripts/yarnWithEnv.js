@@ -1,4 +1,3 @@
-export {};
 const spawn = require("child_process").spawn;
 
 // Executes a yarn command in the context of a dotenv file
