@@ -26,7 +26,9 @@
 // "Use a single environment variable to toggle configuration."
 
 // Custom Set in eas.json
-const profile = process.env.profile;
+const profile = process.env.APP_ENV;
+
+console.log({ profile });
 
 let config = {};
 
