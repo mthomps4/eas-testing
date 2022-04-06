@@ -14,7 +14,6 @@ rescue StandardError
   {}
 end
 
-# target 'babygroot' do
 abstract_target 'shared' do
   use_expo_modules!
   config = use_native_modules!
@@ -34,12 +33,12 @@ abstract_target 'shared' do
   target 'babygroot' do
   end
 
-  # target 'babygroot-alpha' do
-  # end
+  target 'babygroot-alpha' do
+  end
 
   # EAS/Expo Profile Install
-  # target 'babygroot-preview' do
-  # end
+  target 'babygroot-preview' do
+  end
 
   target 'babygroot-development' do
   end
@@ -65,16 +64,6 @@ abstract_target 'shared' do
   end
 
   post_integrate do |installer|
-    begin
-      expo_patch_react_imports!(installer)
-    rescue StandardError => e
-      Pod::UI.warn e
-    end
-    begin
-      expo_patch_react_imports!(installer)
-    rescue StandardError => e
-      Pod::UI.warn e
-    end
     begin
       expo_patch_react_imports!(installer)
     rescue StandardError => e
