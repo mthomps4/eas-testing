@@ -1,8 +1,23 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  SafeAreaView,
+  ScrollView,
+} from "react-native";
 import { useAssets } from "expo-asset";
 import Constants from "expo-constants";
+import "expo-dev-client"; // TODO: make this conditional
+
+const debugMode = Constants.manifest?.extra?.debug;
+console.log({ debugMode });
+
+// if (debugMode) {
+//   require("expo-dev-client");
+// }
 
 export default function App() {
   const [assets, error] = useAssets(require("./assets/baby_groot.png"));
@@ -26,24 +41,28 @@ export default function App() {
   }
   const [logo] = assets;
 
-  const stuff = JSON.stringify(Constants.manifest, null, 2);
+  const manifest = JSON.stringify(Constants.manifest, null, 2);
+  const manifest2 = JSON.stringify(Constants.manifest2, null, 2);
 
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <Image source={logo} style={styles.logo} />
-      <View
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "100%",
-          backgroundColor: "#ccc",
-        }}
-      >
-        <Text>{stuff}</Text>
-      </View>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <ScrollView>
+        <StatusBar style="auto" />
+        <Image source={logo} style={styles.logo} />
+        <View
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+            backgroundColor: "#ccc",
+          }}
+        >
+          <Text>{manifest}</Text>
+          <Text>{manifest2}</Text>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 

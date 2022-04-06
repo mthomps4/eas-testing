@@ -18,6 +18,7 @@
       "extends": "base",
       "distribution": "internal",
       "channel": "simulator",
+      "developmentClient": true,
       "android": {
         "gradleCommand": ":app:assembleDebug",
         "buildType": "apk"
@@ -28,13 +29,15 @@
         "scheme": "babygroot-sim"
       },
       "env": {
-        "profile": "local"
+        "profile": "simulator",
+        "debug": "true"
       }
     },
     "development": {
       "extends": "base",
       "distribution": "internal",
       "channel": "development",
+      "developmentClient": true,
       "android": {
         "gradleCommand": ":app:assembleDebug"
       },
@@ -43,7 +46,8 @@
         "scheme": "babygroot-development"
       },
       "env": {
-        "profile": "development"
+        "profile": "development",
+        "debug": "true"
       }
     },
     "preview": {

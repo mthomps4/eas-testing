@@ -41,10 +41,15 @@ abstract_target 'shared' do
   end
 
   target 'babygroot-development' do
+    # Pods for dev client
+    pod 'expo-dev-menu', path: '../node_modules/expo-dev-menu', configurations: :debug
+    pod 'expo-dev-launcher', path: '../node_modules/expo-dev-launcher', configurations: :debug
   end
 
   # Local Download for Simulator
   # target 'babygroot-sim' do
+  #   pod 'expo-dev-menu', path: '../node_modules/expo-dev-menu', :configurations => :debug
+  #   pod 'expo-dev-launcher', path: '../node_modules/expo-dev-launcher', :configurations => :debug
   # end
 
   post_install do |installer|
