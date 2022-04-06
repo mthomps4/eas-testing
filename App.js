@@ -1,6 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  SafeAreaView,
+  ScrollView,
+} from "react-native";
 import { useAssets } from "expo-asset";
 import Constants from "expo-constants";
 import "expo-dev-client"; // TODO: make this conditional
@@ -38,21 +45,23 @@ export default function App() {
   const stuff = JSON.stringify(Constants.manifest, null, 2);
 
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <Image source={logo} style={styles.logo} />
-      <View
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "100%",
-          backgroundColor: "#ccc",
-        }}
-      >
-        <Text>{stuff}</Text>
-      </View>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <ScrollView>
+        <StatusBar style="auto" />
+        <Image source={logo} style={styles.logo} />
+        <View
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+            backgroundColor: "#ccc",
+          }}
+        >
+          <Text>{stuff}</Text>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
