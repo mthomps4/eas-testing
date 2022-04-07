@@ -38,7 +38,7 @@ if (profile) {
         appName,
       },
       ios: {
-        buildNumber: "8", //TODO: GitHash or buildId Combo when Build Profile Alpha? Manual bump for now config.js cannot autoIncrement
+        buildNumber: "9", //TODO: GitHash or buildId Combo when Build Profile Alpha? Manual bump for now config.js cannot autoIncrement
       },
     },
   };

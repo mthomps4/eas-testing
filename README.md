@@ -67,5 +67,3 @@ Create a BARE Expo application and leverage EAS with the following "variants" th
 
 - [ENVs w/ Expo](https://docs.expo.dev/guides/environment-variables/)
 - [ENVs and Common Questions](https://docs.expo.dev/build-reference/variables/#common-questions)
-
-------------------------------
