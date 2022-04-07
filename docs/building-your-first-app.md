@@ -1,4 +1,4 @@
-# Building w/ EAS
+# Your first build w/ EAS
 
 So we have "Hello World" running. Great!
 
