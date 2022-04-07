@@ -56,4 +56,4 @@
 
 ## What's next
 
-At this point, you should have a "Hello World" application and the ability to run it in a simulator with `yarn ios|android`. If that's the case, lets dive into the fun world of building your App for deployment. [Building Your App](building-your-app.md)
+At this point, you should have a "Hello World" application and the ability to run it in a simulator with `yarn ios|android`. If that's the case, lets dive into the fun world of building your App for deployment. [Building Your App](./building-your-app.md)
