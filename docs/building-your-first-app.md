@@ -28,70 +28,77 @@ To start we need to make an `internal` build in Expo.
 - Ensure you are logged into eas w/ `eas whoami`
 - From our "hello world" app run `eas build:configure` - this will output `eas.json` and update our `app.json` file.
 
-... Lets add EAS config (IOS ONLY - ANDROID TODO)
-... Lets try to build for iOS
-... Its prompting me for... a LOT?!?! WHA?
-... What are Certs / Profiles, etc. (IOS SPECIFICS)
+------
 
-... I See an Successful Build!
-... Expo Profile API
-... Finding and Installing your build in Expo w/ QR code
+- ... Lets add EAS config (IOS ONLY - ANDROID TODO)
+- ... Lets try to build for iOS
+- ... Its prompting me for... a LOT?!?! WHA?
+- ... What are Certs / Profiles, etc. (IOS SPECIFICS)
 
-... So this techincally created a cert for Production
-     certs `org.name.myapp` not `org.name.myapp.preview`
-... So how do we make this Preview?
-... Insert Build Variants
-... IOS ONLY (ANDROID TODO SECTION)
-... ALL THE CONFIG (Get ya hands dirty)
-... XCode... What am I even staring at
-... Creating Targets and Schemes
-... Gotchas w/ Expo Modules and Abstract Targets
-... Lets create an APP Icon for Dev VS "Prod"
-... Android VS IOS HOW TO App Icons
-... All this config ...Are you lost yet?
-... but wait App.json? config.js?!
-... Lets try it out with a new build!
-... So now we have preview build?!
-... yes we have a `preview` build and can mark that off the list.
+- ... I See an Successful Build!
+- ... Expo Profile API
+- ... Finding and Installing your build in Expo w/ QR code
 
-... Oh uh we noticed `preview`(or any other build) is crashing -- insert development build.
-... Release VS Debug builds
-... More about Metro bundler
-... Insert Expo Dev client
-... Why Expo Dev Client
-... The setup
-... The config
-... Building for different Profiles w/ EAS
-... But wait!!! The IDENTIFIER
-... Shoot, So we need another build Variant
-... IOS Specifics / ANDROID TODO (Build Profile for DEV)
-... Rinse Repeat Targets (IOS)
-... Gotchas w/ Expo Modules and Abstract Targets
-... XCode Remove that Dupe File ^^^
-... New Build Script for Dev
-... Download and Test
-... Troubleshooting QR Code? (Somethings off)
-... WAIT Its looking for Metro Bundler
-... More about Expo Dev Client and how to run
-... Running Expo Client
-... Making changes
-... When you need to cut a new build for Dev
+- ... So this techincally created a cert for Production
+- certs `org.name.myapp` not `org.name.myapp.preview`
+- ... So how do we make this Preview?
+- ... Insert Build Variants
+- ... IOS ONLY (ANDROID TODO SECTION)
+- ... ALL THE CONFIG (Get ya hands dirty)
+- ... XCode... What am I even staring at
+- ... Creating Targets and Schemes
+- ... Gotchas w/ Expo Modules and Abstract Targets
+- ... Lets create an APP Icon for Dev VS "Prod"
+- ... Android VS IOS HOW TO App Icons
+- ... All this config ...Are you lost yet?
+- ... but wait App.json? config.js?!
+- ... Lets try it out with a new build!
+- ... So now we have preview build?!
+- ... yes we have a `preview` build and can mark that off the list.
+
+- ... Oh uh we noticed `preview`(or any other build) is crashing -- insert development build.
+- ... Release VS Debug builds
+- ... More about Metro bundler
+- ... Insert Expo Dev client
+- ... Why Expo Dev Client
+- ... The setup
+- ... The config
+- ... Building for different Profiles w/ EAS
+- ... But wait!!! The IDENTIFIER
+- ... Shoot, So we need another build Variant
+- ... IOS Specifics / ANDROID TODO (Build Profile for DEV)
+- ... Rinse Repeat Targets (IOS)
+- ... Gotchas w/ Expo Modules and Abstract Targets
+- ... XCode Remove that Dupe File ^^^
+- ... New Build Script for Dev
+- ... Download and Test
+- ... Troubleshooting QR Code? (Somethings off)
+- ... WAIT Its looking for Metro Bundler
+- ... More about Expo Dev Client and how to run
+- ... Running Expo Client
+- ... Making changes
+- ... When you need to cut a new build for Dev
 
 -- Simulator
-What if I don't have a physical device to test with
-...  Insert Sim Builds
-... Looking at our end goal, now that we understand the DevClient
-Simulator Builds -- Same as Dev but ZIP file for simulators
+
+- What if I don't have a physical device to test with
+- ...  Insert Sim Builds
+- ... Looking at our end goal, now that we understand the DevClient
+Simulator Builds
+- Same as Dev but ZIP file for simulators
 No scanning a QR Code
 
-... All of this FOR A Proper Preview BUILD?! (yes)
+----
 
---- Next Steps
-... TO THE APP STORE
+- ... All of this FOR A Proper Preview BUILD?! (yes)
 
-TODO FOR ANDROID
+---
 
-IOS:
+## Next Steps... TO THE APP STORE
+
+### TODO FOR ANDROID
+
+### IOS
 
 - TestFlight 101
 - Create a Test Group (INTERNAL)
