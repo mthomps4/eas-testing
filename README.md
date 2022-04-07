@@ -27,7 +27,7 @@ Create a BARE Expo application and leverage EAS with the following "variants" th
 ## The Process
 
 1. [Getting Started](./docs/getting-started.md)
-2. [Building with EAS](./docs/building-your-app.md)
+2. [Building with EAS](./docs/building-your-first-app.md)
 3. asdf
 
 ## Notes and Resources
