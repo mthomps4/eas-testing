@@ -24,24 +24,26 @@ Create a BARE Expo application and leverage EAS with the following "variants" th
 
 *NOTE: Both Simulator and Development builds require `expo-dev-client`. More about Expo Dev Client here [docs/expo-dev-client-setup](./docs/expo-dev-client-setup.md)*
 
-## Steps
+## The Process
 
 1. [Getting Started](./docs/getting-started.md)
-2. a
+2. [Building with EAS](./docs/building-your-app.md)
+3. asdf
 
-## Useful Commands
+## Notes and Resources
+
+### Useful Commands
 
 - `expo start -c` to clear the Metro Bundler cache
 - `npx pod-install` to install pods for iOS. If you are used to yarn, alias to something like `yarn pods`.
-- dd
 
-## References and Links
+### Links
 
-### Expo on M1s
+#### Expo on M1s
 
 - [JDK for M1s](https://discord.com/channels/370570267069513731/773706016457621545/961380144650539049)
 
-### Extra Deps
+#### Extra Deps
 
 - [Expo Modules](https://docs.expo.dev/bare/installing-expo-modules/)
 - [Expo Dev Client](https://www.npmjs.com/package/expo-dev-client)
@@ -50,7 +52,7 @@ Create a BARE Expo application and leverage EAS with the following "variants" th
 
 *Note: Run with `expo install dep`*
 
-### Links
+#### Links
 
 - [Expo Glossary](https://docs.expo.dev/workflow/glossary-of-terms/)
 - [Intro to EAS Build](https://docs.expo.dev/build/introduction/)
@@ -61,7 +63,7 @@ Create a BARE Expo application and leverage EAS with the following "variants" th
 - [Configuration w/ app.config](https://docs.expo.dev/workflow/configuration/)
 - [App config scheme](https://docs.expo.dev/versions/latest/config/app/)
 
-### ENVs
+#### ENVs
 
 - [ENVs w/ Expo](https://docs.expo.dev/guides/environment-variables/)
 - [ENVs and Common Questions](https://docs.expo.dev/build-reference/variables/#common-questions)
