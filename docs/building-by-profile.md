@@ -13,3 +13,5 @@ TODO!
 
 If all goes well -- Install via QR
 You should still have the first Build on your phone... and now a second app with the new App Icon labeled (Preview)
+
+SEE The Brain Dump [dump](./dump.md)
