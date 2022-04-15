@@ -1,5 +1,22 @@
 # Getting Started
 
+## TOC
+
+- [Getting Started](#getting-started)
+  - [TOC](#toc)
+  - [Requirements](#requirements)
+  - [Recommended Reads](#recommended-reads)
+  - [Downloads](#downloads)
+  - [Setup a new Project](#setup-a-new-project)
+    - [Init](#init)
+    - [Add Typescript](#add-typescript)
+    - [Add some Code](#add-some-code)
+    - [Expo Go](#expo-go)
+      - [On machine](#on-machine)
+      - [On Device](#on-device)
+      - [Test](#test)
+  - [What's next](#whats-next)
+
 ## Requirements
 
 - An Expo Account [signup](https://expo.dev/signup)

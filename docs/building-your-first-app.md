@@ -1,4 +1,22 @@
-# Your first build w/ EAS
+# TOC
+
+- [TOC](#toc)
+  - [Your first build w/ EAS](#your-first-build-w-eas)
+  - [10,000 ft View](#10000-ft-view)
+  - [Building Our First Build](#building-our-first-build)
+    - [EAS Config](#eas-config)
+    - [First Build Run](#first-build-run)
+      - [Setting up a Device](#setting-up-a-device)
+      - [Setup Push Notifications](#setup-push-notifications)
+      - [SUCCESS](#success)
+  - [Ok... So what all happened there](#ok-so-what-all-happened-there)
+    - [Expo Dashboard](#expo-dashboard)
+      - [Builds](#builds)
+      - [Credentials](#credentials)
+    - [Play Store Dashboard](#play-store-dashboard)
+  - [But Wait... What about Dev, Alpha, Production?!?](#but-wait-what-about-dev-alpha-production)
+
+## Your first build w/ EAS
 
 So we have "Hello World" running. Great!
 
