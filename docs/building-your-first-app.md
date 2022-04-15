@@ -30,101 +30,97 @@ To start we need to make an `internal` build in Expo.
 
 ------
 
-- ... Lets add EAS config (IOS ONLY - ANDROID TODO)
-- ... Lets try to build for iOS
-- ... Its prompting me for... a LOT?!?! WHA?
-- ... What are Certs / Profiles, etc. (IOS SPECIFICS)
+### EAS Config
 
-- ... I See an Successful Build!
-- ... Expo Profile API
-- ... Finding and Installing your build in Expo w/ QR code
+[eas config](https://docs.expo.dev/build/eas-json/)
+[eas schema](https://docs.expo.dev/build-reference/eas-json/)
 
-- ... So this techincally created a cert for Production
-- certs `org.name.myapp` not `org.name.myapp.preview`
-- ... So how do we make this Preview?
-- ... Insert Build Variants
-- ... IOS ONLY (ANDROID TODO SECTION)
-- ... ALL THE CONFIG (Get ya hands dirty)
-- ... XCode... What am I even staring at
-- ... Creating Targets and Schemes
-- ... Gotchas w/ Expo Modules and Abstract Targets
-- ... Lets create an APP Icon for Dev VS "Prod"
-- ... Android VS IOS HOW TO App Icons
-- ... All this config ...Are you lost yet?
-- ... but wait App.json? config.js?!
-- ... Lets try it out with a new build!
-- ... So now we have preview build?!
-- ... yes we have a `preview` build and can mark that off the list.
+The build:configure will spit out an example `development`, `preview`, and `production` block.
+We'll be expanding these quite a bit, but first lets see if we can get a build rolling.
 
-- ... Oh uh we noticed `preview`(or any other build) is crashing -- insert development build.
-- ... Release VS Debug builds
-- ... More about Metro bundler
-- ... Insert Expo Dev client
-- ... Why Expo Dev Client
-- ... The setup
-- ... The config
-- ... Building for different Profiles w/ EAS
-- ... But wait!!! The IDENTIFIER
-- ... Shoot, So we need another build Variant
-- ... IOS Specifics / ANDROID TODO (Build Profile for DEV)
-- ... Rinse Repeat Targets (IOS)
-- ... Gotchas w/ Expo Modules and Abstract Targets
-- ... XCode Remove that Dupe File ^^^
-- ... New Build Script for Dev
-- ... Download and Test
-- ... Troubleshooting QR Code? (Somethings off)
-- ... WAIT Its looking for Metro Bundler
-- ... More about Expo Dev Client and how to run
-- ... Running Expo Client
-- ... Making changes
-- ... When you need to cut a new build for Dev
+### First Build Run
 
--- Simulator
+Lets run `eas build --profile preview`
+If you take a close look, you'll see `preview` is marked `distribution: internal`.
+This means it will not push to the AppStore and is only meant to be built and installed through Expo.
 
-- What if I don't have a physical device to test with
-- ...  Insert Sim Builds
-- ... Looking at our end goal, now that we understand the DevClient
-Simulator Builds
-- Same as Dev but ZIP file for simulators
-No scanning a QR Code
+You should get a prompt for `select platform`.
+Go ahead and select `All`
 
-----
+From here, you'll be prompted "Do you want to use your apple dev account?"
+**YES PLEASE** -- Expo will manage all your Certs, Profiles, etc.
+This is one of the main benefits of Expo... trust me - you don't want to do this manually.
 
-- ... All of this FOR A Proper Preview BUILD?! (yes)
+What are all these things?!
+More on that later... for now just know there's a lot of "stuff" the AppStore needs to verify you, your app, and get it ready to ship.
+And each store has their own set of "stuff" that needs managed.
 
----
+#### Setting up a Device
 
-## Next Steps... TO THE APP STORE
+During the process you'll be prompted to set up or choose a list of Devices that should be able to download and test your app.
+Each device has a uniq UUID attached. Follow the prompts and add your physical device.
 
-### TODO FOR ANDROID
+![register-device](images/building-your-first-app/register-device.png)
+[Setting up Expo Profile](./setting-up-expo-profile.md)
 
-### IOS
+**On the next build**
+![select-device](images/building-your-first-app/select-for-build.png)
 
-- TestFlight 101
-- Create a Test Group (INTERNAL)
-- Alpha VS Production (use case for both)
-- BuildNumber vs Versioning
-- Another look at app.config.js
-- Repeat -- Lets create yet another Profile/Variant
-- Entitlements in XCode
-  - Wha? My apps not entitled
-- Build (Don't Submit)
-- See the different Prompts for Certs
-- See the difference in EXPO
-- EAS Submit (Terminal)
-- Seeing your app in TestFlight
-- Managing Builds to Groups
-- Auto approving the "yes, no, no, Just let me test please" prompts (TODO)
-- Downloading TestFlight
-- Getting the App Invite
-- Test Drive your app
+#### Setup Push Notifications
 
-Now you have 3 App Variants:
+When Expo asks if you would like to enable Push Notifications go ahead and select Yes. We'll need to add `capabilities` via XCode later to have this fully functioning, but this adds the key to the AppStore.
 
-- Dev (Debug build)
-- Preview (Release build via Expo)
-- Alpha (Release build from TestFlight)
+#### SUCCESS
 
-Lets get our final Profile set for Production!
+![build-prompts](images/building-your-first-app/build-prompts.png)
+Hopefully you'll see your build in Queue.
+once complete you should see a URL and QR code to scan.
 
-... rinse repeat -- build -- test (TODO for Android)
+Assuming everything is successful from setting up your device you should see this prompt.
+
+<img src="./images/building-your-first-app/install-app.png" width="300px" />
+
+## Ok... So what all happened there
+
+### Expo Dashboard
+
+Lets navigate to the Expo Dashboard `expo.dev`.
+Navigate to your app and you'll see in the sidebar `builds` and `credentials`.
+Lets start with build.
+
+#### Builds
+
+If you open the `builds` tab you'll see your successful build like below.
+![expo builds](images/building-your-first-app/expo-builds.png)
+
+In the event your build failed, you can click through here to see the logs and error messages as to why it failed. Assuming it was a success, you should be able to click through and see something similar below. Here you can see the build logs, additional info, and even locate the QR/URL again for install.
+
+![successful-build](images/building-your-first-app/successful-build-screen.png)
+
+#### Credentials
+
+Lets navigate to Credentials and select `iOS`.
+
+Here you should see a `Bundle Identifier` for `org.name.{MyApp}`. Lets click on that.
+You should be brought to a screen like below:
+
+![credentials](./images/building-your-first-app/expo-managed-credentials.png)
+
+Taking a closer look, you'll notice Expo has created an AdHoc `Developer Certificate` for us, a `provisioning profile (bundle identifier)`, and you'll see the key that was generated for `push notifications`
+
+**The benifit of Expo:** If you sign into `developer.apple.com` navigate to `Certificats, Identifiers, & Profiles`. Navigating through you can see all these have been provisioned through apple and synced with Expo :tada:!
+
+![apple creds](images/building-your-first-app/apple-certs.png)
+
+### Play Store Dashboard
+
+TODO: Follow up with Android specifics
+
+## But Wait... What about Dev, Alpha, Production?!?
+
+You're right... we are just getting started.
+If you look at the profile from our preview build in expo or the AppStore you'll notice it used `org.name.MyApp` that's actually the profile we'd want for our PRODUCTION app.
+
+Lets fix that!
+
+[Adding Build Variants](./adding-build-variants.md)
