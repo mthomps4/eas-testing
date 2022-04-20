@@ -41,6 +41,10 @@ All of this should be the exact same until we go to build.
 
 ## Building for TestFlight
 
+### Versioning
+
+We can chat a ton about versioning... TLDR we want CI/CD to handle a good chunk of this for us.
+
 So you have a new target set, and you're ready to build.
 Simlar to our preview command, run:
 `eas build -p ios --profile alpha`
