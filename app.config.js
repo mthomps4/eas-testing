@@ -2,7 +2,7 @@
 // https://docs.expo.dev/build-reference/variables/#built-in-environment-variables
 
 // Not set when running expo-dev-client locally
-const buildId = process.env.EAS_BUILD_ID || "local build";
+const buildId = process.env.EAS_BUILD_ID || "local-build";
 const buildProfile =
   process.env.EAS_BUILD_PROFILE || "local profile check APP_ENV";
 const gitHash = process.env.EAS_BUILD_COMMIT_HASH || "local build";
@@ -36,9 +36,6 @@ if (profile) {
         },
         profile,
         appName,
-      },
-      ios: {
-        buildNumber: "9", //TODO: GitHash or buildId Combo when Build Profile Alpha? Manual bump for now config.js cannot autoIncrement
       },
     },
   };

@@ -1,9 +1,14 @@
+- so that was an internal build... Lets get this ready for the AppStore!
+- Internal Vs Store
+- EAS SUBMIT
+- IOS/Andorid shift
+- TestFlight
+- Internal/External Groups
+  - TODO: Manage Confirmation for each build
+- Versioning (Manual for now see CI/CD for more details)
+- Alpha vs Prod notes (Do I need both?)
 
-- ... All this config ...Are you lost yet?
-- ... but wait App.json? config.js?!
-- ... Lets try it out with a new build!
-- ... So now we have preview build?!
-- ... yes we have a `preview` build and can mark that off the list.
+-
 
 - ... Oh uh we noticed `preview`(or any other build) is crashing -- insert development build.
 - ... Release VS Debug builds
