@@ -65,4 +65,40 @@ If you have a successful build, lets go see the differences in Expo Dashboard.
 
 ---
 
-SEE The Brain Dump [dump](./dump.md)
+### Expo Dashboard
+
+asdf
+
+## TestFlight Dashboard
+
+asdf
+
+#### Testing Groups and Users
+
+Internal vs External
+
+#### Automating The Questionaire
+
+TODO
+
+### Using Test Flight
+
+asdf
+
+### Downloading our App
+
+asdf
+
+### Managing Versions
+
+asdf
+
+### TestFlight Emails
+
+## Congrats
+
+You have an app ready in the AppStore. Now lets take one final look at how we can Debug these builds should anything go wrong.
+
+[Creating the Development Build](./creating-the-development-build.md)
+
+SEE The Brain Dump [todo dump](./dump.md)

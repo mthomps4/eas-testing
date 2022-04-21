@@ -4,6 +4,7 @@
 
 - [Getting Started](#getting-started)
   - [TOC](#toc)
+  - [Sections](#sections)
   - [Requirements](#requirements)
   - [Recommended Reads](#recommended-reads)
   - [Downloads](#downloads)
@@ -16,6 +17,20 @@
       - [On Device](#on-device)
       - [Test](#test)
   - [What's next](#whats-next)
+
+## Sections
+
+- [Getting Started](./getting-started.md)
+- [Building Your First App](./building-your-first-app.md)
+- [Adding Build Variants](./adding-build-variants.md)
+  - [Adding Targets for iOS](./ios-adding-build-targets.md)
+  - [TODO: Adding Android Flavors](./android-adding-flavors.md)
+- [Building by Profile](./building-by-profile.md)
+- [To the App Store](./to-the-app-store.md)
+  - [iOS: to TestFlight](./to-test-flight.md)
+  - [TODO: Android: to GooglePlay](./android-to-google-play.md)
+- [Creating the Development Build](./creating-the-development-build.md)
+- [Creating the Simulator Build](./creating-the-simulator-build.md)
 
 ## Requirements
 
