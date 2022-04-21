@@ -78,3 +78,21 @@ Lets get our final Profile set for Production!
 Simulator Builds
 - Same as Dev but ZIP file for simulators
 No scanning a QR Code
+
+## NOW ADD ENVS W/ Doppler
+
+See Dominics Notes
+
+## Now lets set CI/CD
+
+See Dominics Notes
+
+- PR Kicks off `Preview` Build
+
+## GitHub Actions for Versioning and Store Submission
+
+See Dominics Notes
+
+- Auto Versioning instead of manual commits
+- iOS/Android
+- What to expect (What/When)
