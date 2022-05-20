@@ -129,31 +129,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    flavorDimensions "env"
-    productFlavors {
-        simulator {
-            dimension "env"
-            applicationId "com.babygroot.simulator"
-        }
-        development {
-            dimension "env"
-            applicationId "com.babygroot.development"
-        }
-        preview {
-            dimension "env"
-            applicationId "com.babygroot.preview"
-        }
-        alpha {
-            dimension "env"
-            applicationId "com.babygroot.alpha"
-        }
-        production {
-            dimension "env"
-            applicationId "com.babygroot"
-        }
-    }
     defaultConfig {
-        applicationId "com.babygroot.development"
+        applicationId "com.babygroot"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -185,6 +162,48 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+        // simulator {
+        //     applicationIdSuffix ".sim"
+        //     debuggable true
+        // }
+        // development {
+        //     applicationIdSuffix ".development"
+        //     debuggable true
+        // }
+        // preview {
+        //     applicationIdSuffix ".preview"
+        //     debuggable false
+        // }
+        // alpha {
+        //     applicationIdSuffix ".alpha"
+        //     debuggable false
+        // }
+        // production {
+        //     debuggable false
+        // }
+    }
+    flavorDimensions "env"
+    productFlavors {
+        simulator {
+            dimension "env"
+            applicationId "com.babygroot.simulator"
+        }
+        development {
+            dimension "env"
+            applicationId "com.babygroot.development"
+        }
+        preview {
+            dimension "env"
+            applicationId "com.babygroot.preview"
+        }
+        alpha {
+            dimension "env"
+            applicationId "com.babygroot.alpha"
+        }
+        production {
+            dimension "env"
+            applicationId "com.babygroot"
         }
     }
 
