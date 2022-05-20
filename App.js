@@ -10,14 +10,15 @@ import {
 } from "react-native";
 import { useAssets } from "expo-asset";
 import Constants from "expo-constants";
-import "expo-dev-client"; // TODO: make this conditional
 
-const debugMode = Constants.manifest?.extra?.debug;
-console.log({ debugMode });
+// import "expo-dev-client"; // TODO: make this conditional
 
-// if (debugMode) {
-//   require("expo-dev-client");
-// }
+const profile = Constants.manifest?.extra?.profile;
+const devProfiles = ["development", "simulation", "local"];
+
+if (devProfiles.includes(profile)) {
+  require("expo-dev-client");
+}
 
 export default function App() {
   const [assets, error] = useAssets(require("./assets/baby_groot.png"));

@@ -11,7 +11,7 @@ const isCI = process.env.CI; // 1 or 0
 // https://docs.expo.dev/build-reference/variables/#can-i-share-environment-variables-defined-in
 
 // eas build env || .env.* file from start:* (yarn start:dev)
-const profile = process.env.APP_ENV;
+const profile = process.env.APP_ENV || "local";
 
 let config = {};
 
