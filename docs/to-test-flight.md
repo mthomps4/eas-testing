@@ -48,7 +48,7 @@ We can chat a ton about versioning... TLDR we want CI/CD to handle a good chunk 
 For now we need to update the version or buildNumber before we can submit to the store.
 Open the `info.plist` file and bump this number
 
-```
+```xml
   <key>CFBundleVersion</key>
   <string>9</string>
 ```
