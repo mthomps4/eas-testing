@@ -18,27 +18,27 @@ PODS:
     - EXJSONUtils
   - Expo (44.0.6):
     - ExpoModulesCore
-  - expo-dev-client (0.8.3):
+  - expo-dev-client (0.8.5):
     - EXManifests
     - expo-dev-launcher
     - expo-dev-menu
     - expo-dev-menu-interface
     - EXUpdatesInterface
-  - expo-dev-launcher (0.10.3):
+  - expo-dev-launcher (0.10.5):
     - EXManifests
-    - expo-dev-launcher/Main (= 0.10.3)
+    - expo-dev-launcher/Main (= 0.10.5)
     - expo-dev-menu
     - expo-dev-menu-interface
     - EXUpdatesInterface
     - React-Core
-  - expo-dev-launcher/Main (0.10.3):
+  - expo-dev-launcher/Main (0.10.5):
     - EXManifests
     - expo-dev-launcher/Unsafe
     - expo-dev-menu
     - expo-dev-menu-interface
     - EXUpdatesInterface
     - React-Core
-  - expo-dev-launcher/Unsafe (0.10.3):
+  - expo-dev-launcher/Unsafe (0.10.5):
     - EXManifests
     - expo-dev-menu
     - expo-dev-menu-interface
@@ -514,8 +514,8 @@ SPEC CHECKSUMS:
   EXKeepAwake: bf48d7f740a5cd2befed6cf9a49911d385c6c47d
   EXManifests: d3464cd2278f4a19cd80c1aa673231570b534c11
   Expo: 534e51e607aba8229293297da5585f4b26f50fa1
-  expo-dev-client: b27dfc798fbe3cfc55f25023f8c40cb3649d7e35
-  expo-dev-launcher: 00b80231e237b6233c882cd4424ace0cec49237a
+  expo-dev-client: aac6ed888f00c7e7335fedda6755df5676612f40
+  expo-dev-launcher: 0619fe27ecc91573fae69cf6d00b8e1737ef773f
   expo-dev-menu: 942ad845341d994c8dfb70c83cd840378b81650d
   expo-dev-menu-interface: 395d046704878e5de471a89102ddf361cbb7e52f
   ExpoModulesCore: 32c0ccb47f477d330ee93db72505380adf0de09a
