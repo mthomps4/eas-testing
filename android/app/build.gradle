@@ -124,6 +124,46 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 def enableHermes = project.ext.react.get("enableHermes", false);
 
 android {
+
+    flavorDimensions "env"
+    productFlavor {
+        simulator {
+            dimension "env"
+            applicationId "com.baby-groot.simulator"
+        }
+        development {
+            dimension "env"
+            applicationId "com.baby-groot.development"
+        }
+        preview {
+            dimension "env"
+            applicationId "com.baby-groot.preview"
+        }
+        alpha {
+            dimension "env"
+            applicationId "com.baby-groot.alpha"
+        }
+        production {
+            dimension "env"
+            applicationId "com.baby-groot"
+        }
+    }
+
+    // If you want to restrict soe flavors to specific build types...
+    // variantFilter { variant ->
+    //     def validVariants = [
+    //             ["production", "release"],
+    //             ["development", "debug"],
+    //     ]
+    //     def buildTypeName = variant.buildType*.name
+    //     def flavorName = variant.flavors*.name
+
+    //     def isValid = validVariants.any { flavorName.contains(it[0]) && buildTypeName.contains(it[1]) }
+    //     if (!isValid) {
+    //         setIgnore(true)
+    //     }
+    // }
+
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     compileOptions {
@@ -212,7 +252,7 @@ dependencies {
             implementation 'com.facebook.fresco:animated-webp:2.0.0'
         }
     }
-    
+
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'
