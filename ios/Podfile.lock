@@ -18,27 +18,27 @@ PODS:
     - EXJSONUtils
   - Expo (44.0.6):
     - ExpoModulesCore
-  - expo-dev-client (0.8.4):
+  - expo-dev-client (0.8.3):
     - EXManifests
     - expo-dev-launcher
     - expo-dev-menu
     - expo-dev-menu-interface
     - EXUpdatesInterface
-  - expo-dev-launcher (0.10.4):
+  - expo-dev-launcher (0.10.3):
     - EXManifests
-    - expo-dev-launcher/Main (= 0.10.4)
+    - expo-dev-launcher/Main (= 0.10.3)
     - expo-dev-menu
     - expo-dev-menu-interface
     - EXUpdatesInterface
     - React-Core
-  - expo-dev-launcher/Main (0.10.4):
+  - expo-dev-launcher/Main (0.10.3):
     - EXManifests
     - expo-dev-launcher/Unsafe
     - expo-dev-menu
     - expo-dev-menu-interface
     - EXUpdatesInterface
     - React-Core
-  - expo-dev-launcher/Unsafe (0.10.4):
+  - expo-dev-launcher/Unsafe (0.10.3):
     - EXManifests
     - expo-dev-menu
     - expo-dev-menu-interface
@@ -91,7 +91,7 @@ PODS:
   - EXSplashScreen (0.14.2):
     - ExpoModulesCore
     - React-Core
-  - EXUpdatesInterface (0.5.1)
+  - EXUpdatesInterface (0.5.2)
   - FBLazyVector (0.64.3)
   - FBReactNativeSpec (0.64.3):
     - RCT-Folly (= 2020.01.13.00)
@@ -514,13 +514,13 @@ SPEC CHECKSUMS:
   EXKeepAwake: bf48d7f740a5cd2befed6cf9a49911d385c6c47d
   EXManifests: d3464cd2278f4a19cd80c1aa673231570b534c11
   Expo: 534e51e607aba8229293297da5585f4b26f50fa1
-  expo-dev-client: 6856be1c9b8a098a23e1099abee01a9d66bc0fa4
-  expo-dev-launcher: 875237591555e0258aa1f65442c9a557c5b61b40
+  expo-dev-client: b27dfc798fbe3cfc55f25023f8c40cb3649d7e35
+  expo-dev-launcher: 00b80231e237b6233c882cd4424ace0cec49237a
   expo-dev-menu: 942ad845341d994c8dfb70c83cd840378b81650d
   expo-dev-menu-interface: 395d046704878e5de471a89102ddf361cbb7e52f
   ExpoModulesCore: 32c0ccb47f477d330ee93db72505380adf0de09a
   EXSplashScreen: 21669e598804ee810547dbb6692c8deb5dd8dbf3
-  EXUpdatesInterface: a9814f422d3cd6e7cfd260d13c27786148ece20e
+  EXUpdatesInterface: 13270752afb8c61f83a09117e6b04a682b2db9eb
   FBLazyVector: c71c5917ec0ad2de41d5d06a5855f6d5eda06971
   FBReactNativeSpec: 94dbaa29ef093b6fb7a6504918b522a99a2ebeb5
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
@@ -549,6 +549,6 @@ SPEC CHECKSUMS:
   ReactCommon: 8fea6422328e2fc093e25c9fac67adbcf0f04fb4
   Yoga: e6ecf3fa25af9d4c87e94ad7d5d292eedef49749
 
-PODFILE CHECKSUM: 82fc2072e7f200b384275b1b5a6d0e95db6cbcf8
+PODFILE CHECKSUM: 2370eebfc97b3b696f24ab17e202c58f6e50365c
 
 COCOAPODS: 1.11.2
