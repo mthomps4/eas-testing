@@ -39,7 +39,8 @@
       "channel": "development",
       "developmentClient": true,
       "android": {
-        "gradleCommand": ":app:assembleDevelopmentDebug"
+        "gradleCommand": ":app:assembleDevelopmentDebug",
+        "buildType": "apk"
       },
       "ios": {
         "buildConfiguration": "Debug",
