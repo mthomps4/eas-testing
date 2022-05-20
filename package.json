@@ -11,10 +11,10 @@
     "withEnv:dev": "DOTENV_CONFIG_PATH=.env.development node -r dotenv/config ./scripts/yarnWithEnv"
   },
   "dependencies": {
-    "expo": ">=44.0.0-0 <45.0.0",
+    "expo": "^45.0.4",
     "expo-asset": "~8.4.6",
     "expo-constants": "~13.0.1",
-    "expo-dev-client": "~0.8.5",
+    "expo-dev-client": "^0.9.6",
     "expo-splash-screen": "~0.14.1",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
