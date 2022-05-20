@@ -45,8 +45,18 @@ All of this should be the exact same until we go to build.
 
 We can chat a ton about versioning... TLDR we want CI/CD to handle a good chunk of this for us.
 
-So you have a new target set, and you're ready to build.
-Simlar to our preview command, run:
+For now we need to update the version or buildNumber before we can submit to the store.
+Open the `info.plist` file and bump this number
+
+```
+  <key>CFBundleVersion</key>
+  <string>9</string>
+```
+
+commit that and lets get building.
+
+You have a new target set, and you're ready to build.
+Similar to our preview command, run:
 `eas build -p ios --profile alpha`
 
 Again, follow the prompts and let EAS handle all the things:
@@ -67,38 +77,42 @@ If you have a successful build, lets go see the differences in Expo Dashboard.
 
 ### Expo Dashboard
 
-asdf
+If you navigate to Expo and your project within you should see your projects and recent activity.
+To see a list of builds for a specific project, you can click into the names on the left.
+
+You'll see your most recent builds as well, here you can note where we've built an internal build to download from Expo, as well as our "alpha" build for the store.
+
+![expo-dashboard](images/expo-dash/expo-dashboard.png)
+
+Clicking into our Store build, you'll see we have the option to SUBMIT instead of download.
+Rather than click here, we're going to go ahead and submit
+
+**Credentials**
+If you click on credentials, you can also see the keys and credentials Expo has provisioned for us by target name in iOS.
 
 ## TestFlight Dashboard
 
-asdf
+Overview
 
-#### Testing Groups and Users
+### Testing Groups and Users
 
-Internal vs External
+- adding users
+- Internal vs External Groups
 
-#### Automating The Questionaire
+#### Automating the Questionnaire
 
-TODO
+TODO: Unsure how to automate this post submission -- currently manually clicking yes, no no no so it will kick out to Testing Groups.
 
-### Using Test Flight
+### Using Test Flight (as a User)
 
-asdf
-
-### Downloading our App
-
-asdf
-
-### Managing Versions
-
-asdf
-
-### TestFlight Emails
+- Test Flight Emails
+- Downloading Test Flight
+- Accepting the Invite
+- Downloading our app
+- Downloading updated versions
 
 ## Congrats
 
 You have an app ready in the AppStore. Now lets take one final look at how we can Debug these builds should anything go wrong.
 
 [Creating the Development Build](./creating-the-development-build.md)
-
-SEE The Brain Dump [todo dump](./dump.md)

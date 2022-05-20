@@ -30,7 +30,8 @@
   - [iOS: to TestFlight](./to-test-flight.md)
   - [TODO: Android: to GooglePlay](./android-to-google-play.md)
 - [Creating the Development Build](./creating-the-development-build.md)
-- [Creating the Simulator Build](./creating-the-simulator-build.md)
+- [Creating the Simulator Build](./creating-the-development-build.md#simulation-builds)
+- [ENVs with Doppler](./doppler-envs-w-expo.md)
 
 ## Requirements
 
