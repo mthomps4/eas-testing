@@ -96,12 +96,40 @@ Overview
 
 ### Testing Groups and Users
 
+- compliance information
 - adding users
 - Internal vs External Groups
 
-#### Automating the Questionnaire
+#### Compliance Information & Automating the Questionnaire
 
-TODO: Unsure how to automate this post submission -- currently manually clicking yes, no no no so it will kick out to Testing Groups.
+**What is compliance?** Apple asks about compliance to export laws, more info can be read [here](https://developer.apple.com/documentation/security/complying_with_encryption_export_regulations). Without adding information to the info.plist you will be prompted with a warning upon each TestFlight build that says `⚠️ Missing Compliance`. This requires answering 4 questions. If you were to answer them (with the knowledge) as `yes, no, no, no` it will suffice compliance and allow build to be available. Once you know that the app is exempt from the export reporting you can set a key in the `info.plist` that will automate the builds processing upon upload to TestFlight.
+
+##### Automation the Questionnaire
+
+1. Add `ITSAppUsesNonExemptEncryption` property to the `info.plist` with a value of `false`
+
+>This looks like
+
+``` javascript
+   <key>ITSAppUsesNonExemptEncryption</key>
+   <false/>
+```
+
+<img src="https://user-images.githubusercontent.com/7119624/168678546-9a770676-747c-4c8c-9c3a-9ee98701946c.png">
+
+#### Adding users
+
+Users are added to Internal Test Groups by being a member of the Developer Organization
+
+External Users/Testers (Groups) can be added to builds as well. They do not need to be a part of the Apple Developer Account. When adding external users to a TestFlight build it will require
+
+#### Internal vs. External Testers/Groups
+
+**Internal Testers** As mentioned above Internal Testers are those that are a part of the Apple Developer account for the application
+
+**External Testers** Any individual that you wish to have test your app in TestFlight. Groups can be made to group them in categories. i.e. QA, external beta, etc.
+
+When using External users or groups, a build must be reviewed by Apple before it becomes available. By adding a group or user to a build it will automatically send to the reviewers and go into pending review status. Once review is complete it will be available for install or update in TestFlight.
 
 ### Using Test Flight (as a User)
 
