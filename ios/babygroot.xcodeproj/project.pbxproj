@@ -24,7 +24,6 @@
 		D94CCF1B6E8C8153B15C9274 /* libPods-shared-babygroot-development.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37689843331BFA34CD07960 /* libPods-shared-babygroot-development.a */; };
 		DF2E961D27FD365D00DA90BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		DF2E961E27FD365D00DA90BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		DF2E962127FD365D00DA90BC /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		DF2E962327FD365D00DA90BC /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		DF2E962427FD365D00DA90BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		DF2E962527FD365D00DA90BC /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
@@ -40,7 +39,6 @@
 		DF5D82B727FCC0010051E1F2 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		DFD0B7942837EBB5007C896A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		DFD0B7952837EBB5007C896A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		DFD0B7962837EBB5007C896A /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148C0A2B602CE34D78F8C8B3 /* ExpoModulesProvider.swift */; };
 		DFD0B79A2837EBB5007C896A /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		DFD0B79B2837EBB5007C896A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		DFD0B79C2837EBB5007C896A /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
@@ -104,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2E962127FD365D00DA90BC /* BuildFile in Frameworks */,
 				CA5130D591CF203D121B3C37 /* libPods-shared-babygroot-alpha.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -896,7 +893,6 @@
 			files = (
 				DFD0B7942837EBB5007C896A /* AppDelegate.m in Sources */,
 				DFD0B7952837EBB5007C896A /* main.m in Sources */,
-				DFD0B7962837EBB5007C896A /* ExpoModulesProvider.swift in Sources */,
 				800F339A7A69928DDDF796DE /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1000,7 +996,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1059,7 +1055,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

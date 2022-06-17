@@ -2,15 +2,14 @@ package com.babygroot;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.content.Intent;
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
-import expo.modules.devlauncher.DevLauncherController;
-import expo.modules.devmenu.react.DevMenuAwareReactActivity;
+
 import expo.modules.ReactActivityDelegateWrapper;
 
-public class MainActivity extends DevMenuAwareReactActivity {
+public class MainActivity extends ReactActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     // Set the theme to AppTheme BEFORE onCreate to support
@@ -31,21 +30,9 @@ public class MainActivity extends DevMenuAwareReactActivity {
 
   @Override
   protected ReactActivityDelegate createReactActivityDelegate() {
-    return DevLauncherController.wrapReactActivityDelegate(
-      this,
-      () -> new ReactActivityDelegateWrapper(
-        this,
-        new ReactActivityDelegate(this, getMainComponentName())
-      )
+    return new ReactActivityDelegateWrapper(this,
+      new ReactActivityDelegate(this, getMainComponentName())
     );
-  }
-
-  @Override
-  public void onNewIntent(Intent intent) {
-    if (DevLauncherController.tryToHandleIntent(this, intent)) {
-      return;
-    }
-    super.onNewIntent(intent);
   }
 
   /**
