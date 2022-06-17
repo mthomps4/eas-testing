@@ -61,6 +61,7 @@ static void InitializeFlipper(UIApplication *application) {
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  [super application:application didFinishLaunchingWithOptions:launchOptions];
 
   return bridge;
  }
