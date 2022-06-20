@@ -249,29 +249,47 @@ android {
         }
     }
 
-        // flavorDimensions "env"
-        // productFlavors {
-        //     // simulator {
-        //     //     dimension "env"
-        //     //     applicationId "com.babygroot.simulator"
-        //     // }
-        //     development {
-        //         dimension "env"
-        //         applicationId "com.babygroot.development"
-        //     }
-        //     // preview {
-        //     //     dimension "env"
-        //     //     applicationId "com.babygroot.preview"
-        //     // }
-        //     // alpha {
-        //     //     dimension "env"
-        //     //     applicationId "com.babygroot.alpha"
-        //     // }
-        //     production {
-        //         dimension "env"
-        //         applicationId "com.babygroot"
-        //     }
-        // }
+        flavorDimensions "env"
+        productFlavors {
+            // simulator {
+            //     dimension "env"
+            //     applicationId "com.babygroot.simulator"
+            // }
+            development {
+                dimension "env"
+                applicationId "com.babygroot.development"
+            }
+            // preview {
+            //     dimension "env"
+            //     applicationId "com.babygroot.preview"
+            // }
+            // alpha {
+            //     dimension "env"
+            //     applicationId "com.babygroot.alpha"
+            // }
+            production {
+                dimension "env"
+                applicationId "com.babygroot"
+            }
+        }
+
+    // Limit Type of Releases per Flavor
+    // variantFilter { variant ->
+    //     def validVariants = [
+    //         ["production", "release"],
+    //         ["alpha", "release"],
+    //         ["preview", "release"],
+    //         ["development", "debug"],
+    //         ["simulator", "debug"],
+    //     ]
+    //     def buildTypeName = variant.buildType*.name
+    //     def flavorName = variant.flavors*.name
+
+    //     def isValid = validVariants.any { flavorName.contains(it[0]) && buildTypeName.contains(it[1]) }
+    //     if (!isValid) {
+    //         setIgnore(true)
+    //     }
+    // }
 
     // applicationVariants are e.g. debug, release
     applicationVariants.all { variant ->
