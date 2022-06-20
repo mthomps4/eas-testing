@@ -126,7 +126,7 @@ You should be brought to a screen like below:
 
 Taking a closer look, you'll notice Expo has created an AdHoc `Developer Certificate` for us, a `provisioning profile (bundle identifier)`, and you'll see the key that was generated for `push notifications`
 
-**The benifit of Expo:** If you sign into `developer.apple.com` navigate to `Certificats, Identifiers, & Profiles`. Navigating through you can see all these have been provisioned through apple and synced with Expo :tada:!
+**The benifit of Expo:** If you sign into `developer.apple.com` navigate to `Certificates, Identifiers, & Profiles`. Navigating through you can see all these have been provisioned through apple and synced with Expo :tada:!
 
 ![apple creds](images/building-your-first-app/apple-certs.png)
 

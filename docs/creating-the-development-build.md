@@ -69,7 +69,7 @@ While the Diffs arent' crazy, they are tedious. If something breaks down -- slow
 
 ### Removing Start Packager
 
-Expo's recommendation is to remove the `Start Packager` from teh build process. This will allow you to Start the metro bundler yourself instead of the App attempting to do it automagic-epic-failurely.
+Expo's recommendation is to remove the `Start Packager` from the build process. This will allow you to Start the metro bundler yourself instead of the App attempting to do it automagic-epic-failurely.
 
 Hop into XCode and for **ONLY** our **DEVELOPMENT TARGET** locate the Build Phases and remove `Start Packager` from the phases.
 

@@ -10,7 +10,7 @@ If you recall in our Preview build profile, we set this build to be for "interna
 }
 ```
 
-This works great for installing from Expo but for IOS, we need to get this to TestFlight ASAP for test user groups, feedback, and more importantly Apples approval process. This will let of know of any "Gotchas" sooner rather than later when trying to submit our app for Production. To do that we need a new Build Profile. For this example, we are going to assume we still aren't quite ready for production and want to have this app pointing to Staging credentials. We'll call this build profile `ALPHA`. This also coordinates with Androids "Tracks" for Alpha, Beta, Prod.
+This works great for installing from Expo but for IOS, we need to get this to TestFlight ASAP for test user groups, feedback, and more importantly Apples approval process. This will let us know of any "Gotchas" sooner rather than later when trying to submit our app for Production. To do that we need a new Build Profile. For this example, we are going to assume we still aren't quite ready for production and want to have this app pointing to Staging credentials. We'll call this build profile `ALPHA`. This also coordinates with Androids "Tracks" for Alpha, Beta, Prod.
 
 ```json
     "build": {
@@ -48,7 +48,7 @@ We can chat a ton about versioning... TLDR we want CI/CD to handle a good chunk 
 For now we need to update the version or buildNumber before we can submit to the store.
 Open the `info.plist` file and bump this number
 
-```xml
+```sh
   <key>CFBundleVersion</key>
   <string>9</string>
 ```

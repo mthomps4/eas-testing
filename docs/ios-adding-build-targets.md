@@ -127,7 +127,7 @@ Following the Expo Docs you should see your app, Project and the current Product
 #### Signing and Capabilities
 
 -- GOTCHA NOTE --
-Before we move to far, lets ensure a couple of things not noted in Expos Docs
+Before we move too far, let's ensure a couple of things not noted in Expos Docs
 ![capabilities in xcode](images/adding-build-targets/signing-and-capabilities.png)
 
 Click on your target in Xcode, and then navigate to `Signing and Capabilities`.
@@ -219,7 +219,7 @@ Go ahead and rename it here, and drag 'n drop to VSCode under `Images.xcassets`.
 
 If you restart XCode -- you should see your new Icon show on the new Target!!
 
-Lets test drive this thing Yo!
+Let's test drive this thing Yo!
 
 ## Building your new target
 

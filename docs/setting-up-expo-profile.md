@@ -13,7 +13,7 @@ you'll be brought to a link to "Download" the profile for Expo.
 ![expo profile](./images/expo-profile/download-profile.png)
 
 Follow the prompts and navigate to Settings.
-You should see a link at the top of settings that say's something along the lines of "Install Profile"
+You should see a link at the top of settings that says something along the lines of "Install Profile"
 *Click that.
 
 ![install Profile ](./images/expo-profile/install-profile.png)
