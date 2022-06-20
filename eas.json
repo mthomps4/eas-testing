@@ -82,6 +82,9 @@
     },
     "production": {
       "channel": "production",
+      "env": {
+        "APP_ENV": "production"
+      },
       "ios": {
         "scheme": "babygroot",
         "buildConfiguration": "Release"

@@ -40,8 +40,8 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar backgroundColor="#AAFF22" style="auto" translucent={false} />
       <ScrollView>
-        <StatusBar style="auto" />
         <Image source={logo} style={styles.logo} />
         <View
           style={{
