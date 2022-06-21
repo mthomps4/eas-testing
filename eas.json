@@ -63,7 +63,8 @@
         "buildConfiguration": "Release"
       },
       "android": {
-        "gradleCommand": ":app:bundlePreviewRelease"
+        "gradleCommand": ":app:bundlePreviewRelease",
+        "buildType": "apk"
       }
     },
     "alpha": {
