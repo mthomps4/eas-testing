@@ -28,7 +28,6 @@ if (profile) {
       assetBundlePatterns: ["**/*"],
       extra: {
         eas: {
-          projectId: "8482c23d-2aed-46f1-aacb-8efa56bddddc",
           buildId,
           buildProfile,
           gitHash,
