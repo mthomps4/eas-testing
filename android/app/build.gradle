@@ -254,32 +254,22 @@ android {
             simulator {
                 dimension "env"
                 applicationId "com.babygroot.simulator"
-                // applicationIdSuffix ".simulator"
-                // versionNameSuffix "-simulator"
             }
             development {
                 dimension "env"
                 applicationId "com.babygroot.development"
-                // applicationIdSuffix ".development"
-                // versionNameSuffix "-development"
             }
             preview {
                 dimension "env"
                 applicationId "com.babygroot.preview"
-                // applicationIdSuffix ".preview"
-                // versionNameSuffix "-preview"
             }
             alpha {
                 dimension "env"
                 applicationId "com.babygroot.alpha"
-                // applicationIdSuffix ".alpha"
-                // versionNameSuffix "-alpha"
             }
             production {
                 dimension "env"
                 applicationId "com.babygroot"
-                // applicationIdSuffix ".babygroot"
-                // versionNameSuffix "-babygroot"
             }
         }
 
