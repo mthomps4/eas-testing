@@ -67,7 +67,7 @@ There's alot to cover Lets [Get Started](./docs/getting-started.md)
 
 *Note: Run with `expo install dep`*
 
-#### Links
+#### Ref Links
 
 - [Expo Glossary](https://docs.expo.dev/workflow/glossary-of-terms/)
 - [Intro to EAS Build](https://docs.expo.dev/build/introduction/)
