@@ -1,3 +1,0 @@
-# To Google Play
-
-TODO
