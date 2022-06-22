@@ -26,9 +26,24 @@ Create a BARE Expo application and leverage EAS with the following "variants" th
 
 ## The Process
 
-1. [Getting Started](./docs/getting-started.md)
-2. [Building with EAS](./docs/building-your-first-app.md)
-3. asdf
+There's alot to cover Lets [Get Started](./docs/getting-started.md)
+
+### Sections
+
+- [Getting Started](./01-getting-started.md)
+- [Building Your First App](./02-building-your-first-app.md)
+- [Adding Build Variants](./03-adding-build-variants.md)
+  - [Adding Targets for iOS](./04-ios-adding-build-targets.md)
+  - [Adding Android Flavors](./04-android-adding-flavors.md)
+- [App Config](05-app-config.md)
+- [Building Preview](./06-building-by-profile.md)
+- [To the App Store](./07-to-the-app-store.md)
+  - [iOS: to TestFlight](./08-ios-to-test-flight.md)
+  - [Android: to GooglePlay](./08-android-to-google-play.md)
+- [Creating the Development Build](./09-creating-the-development-build.md)
+- [Creating the Simulator Build](./09-creating-the-development-build.md#simulation-builds)
+- [ENVs with Doppler](./10-doppler-envs-w-expo.md)
+- [CI/CD setup](./11-ci-cd-setup.md)
 
 ## Notes and Resources
 
