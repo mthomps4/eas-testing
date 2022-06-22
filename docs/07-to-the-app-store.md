@@ -5,8 +5,8 @@ If you recall, this is another step where IOS and Android will split off, choose
 
 ## IOS
 
-[to-test-flight](./to-test-flight.md)
+[to-test-flight](./08-ios-to-test-flight.md)
 
 ## ANDROID
 
-TODO
+[to google play](./08-android-to-google-play.md)

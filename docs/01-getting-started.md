@@ -8,6 +8,8 @@
   - [Requirements](#requirements)
   - [Recommended Reads](#recommended-reads)
   - [Downloads](#downloads)
+  - [Goal](#goal)
+    - [Build Use Cases](#build-use-cases)
   - [Setup a new Project](#setup-a-new-project)
     - [Init](#init)
     - [Add Typescript](#add-typescript)
@@ -20,18 +22,20 @@
 
 ## Sections
 
-- [Getting Started](./getting-started.md)
-- [Building Your First App](./building-your-first-app.md)
-- [Adding Build Variants](./adding-build-variants.md)
-  - [Adding Targets for iOS](./ios-adding-build-targets.md)
-  - [TODO: Adding Android Flavors](./android-adding-flavors.md)
-- [Building by Profile](./building-by-profile.md)
-- [To the App Store](./to-the-app-store.md)
-  - [iOS: to TestFlight](./to-test-flight.md)
-  - [TODO: Android: to GooglePlay](./android-to-google-play.md)
-- [Creating the Development Build](./creating-the-development-build.md)
-- [Creating the Simulator Build](./creating-the-development-build.md#simulation-builds)
-- [ENVs with Doppler](./doppler-envs-w-expo.md)
+- [Getting Started](./01-getting-started.md)
+- [Building Your First App](./02-building-your-first-app.md)
+- [Adding Build Variants](./03-adding-build-variants.md)
+  - [Adding Targets for iOS](./04-ios-adding-build-targets.md)
+  - [Adding Android Flavors](./04-android-adding-flavors.md)
+- [App Config](05-app-config.md)
+- [Building Preview](./06-building-by-profile.md)
+- [To the App Store](./07-to-the-app-store.md)
+  - [iOS: to TestFlight](./08-ios-to-test-flight.md)
+  - [Android: to GooglePlay](./08-android-to-google-play.md)
+- [Creating the Development Build](./09-creating-the-development-build.md)
+- [Creating the Simulator Build](./09-creating-the-development-build.md#simulation-builds)
+- [ENVs with Doppler](./10-doppler-envs-w-expo.md)
+- [CI/CD setup](./11-ci-cd-setup.md)
 
 ## Requirements
 
@@ -52,6 +56,30 @@
 - [iOS Sim](https://docs.expo.dev/workflow/ios-simulator/)
 - [Android Studio](https://docs.expo.dev/workflow/android-studio-emulator/)
 - [Expo Go](https://expo.dev/client) (on Device)
+
+## Goal
+
+Create a BARE Expo application and leverage EAS with the following "variants" that can be installed on a SINGLE device.[See App Variants](https://docs.expo.dev/build-reference/variants/)
+
+- *Simulator
+- Development
+- Preview
+- Alpha
+- Production
+
+### Build Use Cases
+
+**Simulator:** This build outputs a `.app` and `.apk` file for your local simulator. You can drag and drop these builds to your running simulator. (Uses Expo-Dev-Client)
+
+**Development:** Builds a DEBUG build via Expo. This is installed via Expo QR Code/URL via Expo profile. We do not worry about bumping the build/version for this build, this is simply for testing/debugging a specific build. (Uses Expo-Dev-Client)
+
+**Preview:** A RELEASE build via Expo. We would look to have CI build this each PR as a sanity check. If we wish to test the build of that PR, we are able to download vis Expo QR/URL. (Note: this still produces an apk for Android)
+
+**Alpha:** TestFlight/Alpha submission. This is the first pass at getting the app to the app store. From here, we can create test groups for both Internal folk and External clients/stakeholders. This build will never actually be release, but is an easy way to run new features by our clients. If you are coming over from Web, this is our "Staging/QA" sandbox. You can imagine this may point to a different dataset, etc. We only need to bump the buildNumber/versionCode here.
+
+**Production:** TestFlight/Prod track submission. The real deal, we can still create test groups for Sanity checks before submitting. This would point to production data and APIs. We would Tag and bump the versions appropriately, test, and submit.
+
+*NOTE: Both Simulator and Development builds require `expo-dev-client`. More about Expo Dev Client here [docs/expo-dev-client-setup](./docs/expo-dev-client-setup.md)*
 
 ## Setup a new Project
 

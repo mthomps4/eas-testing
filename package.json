@@ -7,7 +7,7 @@
     "start:dev": "yarn withEnv:dev expo start --dev-client --scheme babygroot-development",
     "android": "expo run:android",
     "android:dev": "yarn withEnv:dev expo run:android --variant=DevelopmentDebug",
-    "ios": "expo run:ios",
+    "ios": "expo run:ios --scheme babygroot-development",
     "web": "expo start --web",
     "withEnv:dev": "DOTENV_CONFIG_PATH=.env.development node -r dotenv/config ./scripts/yarnWithEnv"
   },

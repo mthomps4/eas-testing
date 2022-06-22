@@ -14,7 +14,7 @@
         - [Display Name](#display-name)
         - [AppIcons Target](#appicons-target)
     - [Generating App Icons for iOS](#generating-app-icons-for-ios)
-  - [Building your new target](#building-your-new-target)
+  - [Our Second Build](#our-second-build)
 
 ## Adding Build Targets in iOS
 
@@ -50,6 +50,9 @@ For our preview build we want to ensure we are creating a `Release` build. This 
     "preview": {
       "extends": "base",
       "distribution": "internal",
+      "env": {
+        "APP_ENV": "preview"
+      },
       "ios": {
         "scheme": "babygroot-preview",
         "buildConfiguration": "Release"
@@ -221,6 +224,6 @@ If you restart XCode -- you should see your new Icon show on the new Target!!
 
 Let's test drive this thing Yo!
 
-## Building your new target
+## Our Second Build
 
-[building by profile](./building-by-profile.md)
+We'll need to make one more change for Expo before our next build. Lets head over and update our `app.json`. [app-config](05-app-config.md)

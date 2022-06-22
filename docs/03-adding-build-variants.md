@@ -9,8 +9,9 @@
     - [Android Versioning](#android-versioning)
       - [iOS Versioning](#ios-versioning)
   - [EAS CONFIG -- Proper build variants](#eas-config----proper-build-variants)
-  - [Start w/ iOS](#start-w-ios)
-  - [Start w/ Android](#start-w-android)
+  - [Next Steps](#next-steps)
+    - [Start w/ iOS](#start-w-ios)
+    - [Start w/ Android](#start-w-android)
 
 ## Adding Build Variants and Profiles
 
@@ -36,11 +37,11 @@ Create a BARE Expo application and leverage EAS with the following "variants" th
 
 ### Build Use Cases
 
-**Simulator:** This build outputs a `.app` and `.apk` file for your local simulator. You can drag and drop these builds to your running simulator.
+**Simulator:** This build outputs a `.app` and `.apk` file for your local simulator. You can drag and drop these builds to your running simulator. (Uses Expo-Dev-Client)
 
-**Development:** Builds a DEBUG build via Expo. This is installed via Expo QR Code/URL via Expo profile. We do not worry about bumping the build/version for this build, this is simply for testing/debugging a specific build.
+**Development:** Builds a DEBUG build via Expo. This is installed via Expo QR Code/URL via Expo profile. We do not worry about bumping the build/version for this build, this is simply for testing/debugging a specific build. (Uses Expo-Dev-Client)
 
-**Preview:** A RELEASE build via Expo. We would look to have CI build this each PR as a sanity check. If we wish to test the build of that PR, we are able to download vis Expo QR/URL.
+**Preview:** A RELEASE build via Expo. We would look to have CI build this each PR as a sanity check. If we wish to test the build of that PR, we are able to download vis Expo QR/URL. (Note: this still produces an apk for Android down)
 
 **Alpha:** TestFlight/Alpha submission. This is the first pass at getting the app to the app store. From here, we can create test groups for both Internal folk and External clients/stakeholders. This build will never actually be release, but is an easy way to run new features by our clients. If you are coming over from Web, this is our "Staging/QA" sandbox. You can imagine this may point to a different dataset, etc. We only need to bump the buildNumber/versionCode here. **Points to Staging Data
 
@@ -52,19 +53,21 @@ Create a BARE Expo application and leverage EAS with the following "variants" th
 
 ## Quick Glossary
 
-- Release Vs Debug: There are two types of builds. Release builds and Debug Builds. Release Builds are Production like, the bundle size is smaller, and is more efficient mimicking a real world build. Debug builds allow for extra developer tools to be available. This requires `metro bundler` and other libs like `expo-dev-client` to be installed. This will be similar to the debug tools you use in your simulator locally.
-- TestFlight: iOS landing to test, provision, and gain approval by Apple to submit the specific build to the AppStore, here your app will be vetted against Apples standards for App submission. We can also create `internal` and `external` test groups. This how stakeholders would receive an invite for `Alpha` to test your app and give feedback.
-- PlayStore Tracks: Similar to TestFlight, Google's playstore has Tracks when submitting. (Internal, Closed Alpha, Beta, Production) These Tracks can also have test groups to gain feedback before fully submitting to the store.
+- Release Vs Debug: There are two types of builds. Release builds and Debug Builds. Release Builds are Production like, the bundle size is smaller, and is more efficient mimicking a real world build. Debug builds allow for extra developer tools to be available. This requires `metro bundler` and other libs like `expo-dev-client` to be installed. This will be similar to the debug tools you use in your simulator locally, but with a full build of your app.
+- TestFlight: iOS landing to test, provision, and gain approval by Apple to submit the specific build to the AppStore, here your app will be vetted against Apples standards for App submission. We can also create `internal` and `external` test groups. This how stakeholders would receive an invite for `Alpha` (think Staging) to test your app and give feedback.
+- PlayStore Tracks: Similar to TestFlight, Google's playstore has Tracks when submitting. (Internal, Closed, Beta, Production) These Tracks can also have test groups to gain feedback before fully submitting to the store.
 - Targets and Flavors: We'll dive into these in detail, but iOS uses "Targets" to differentiate our build profiles and variants. Android calls these "Flavors".
 
 ## Versioning
 
-TODO: Link to docs about Versioning with CI
+We'll chat further about versioning when we hit CI/CD but for now here's a quick overview.
+
+[see CI/CD setup for more](./11-ci-cd-setup.md)
 
 ### Android Versioning
 
 - Version: the patch of expo.version is bumped (e.g. 1.2.3 -> 1.2.4)
-- VersionCode: expo.android.versionCode is bumped (e.g. 3 -> 4)
+- VersionCode: expo.android.versionCode is bumped (e.g. 3 -> 4) `1.2.3 (3)`
 
 #### iOS Versioning
 
@@ -84,13 +87,14 @@ Our device has no way to know the first preview build was different than the pro
 
 We want to split this `build Profile` into its own namespace with its own icon to become installable alongside our production app.
 
-As you can imagine, `iOS` and `android` have their own way of doing things in a BareWorkflow. It is much easier to set one Platform at a time.
-Choose your adventure below and lets get started.
+## Next Steps
 
-## Start w/ iOS
+As you can imagine, `iOS` and `android` have their own way of doing things. It is much easier to set one Platform at a time. Choose your adventure below and lets get started.
 
-[Adding Targets for iOS](./ios-adding-build-targets.md)
+### Start w/ iOS
 
-## Start w/ Android
+[Adding Targets for iOS](./04-ios-adding-build-targets.md)
 
-TODO: Waiting on test device to document
+### Start w/ Android
+
+[Adding Flavors to Android](04-android-adding-flavors.md)

@@ -23,7 +23,7 @@ A few small changes to our EAS, add yet another `target/flavor` and we'll be all
 
 The main thing to note here is that we are using `distribution: internal` and `developmentClient: true`. This tells EAS to build a release we can snag from Expo WITH the dev client. You'll note in iOS and android config we've also told EAS to build a `debug` build instead of a `release`. All these things together enable a fully functioning Dev Build.
 
-The next thing we'll need to do is create a Developer `target/flavor` for this build. So, rinse and repeat the steps for [iOS](adding-build-variants.md#start-w-ios) and/or [Android](adding-build-variants.md#start-w-andriod) and create a `development` variant to build.
+The next thing we'll need to do is create a Developer `target/flavor` for this build. So, rinse and repeat the steps for [iOS](05-ios-adding-build-targets.md) and/or [Android](05-android-adding-flavors.md) and create a `development` variant to build.
 
 ## What is the Dev Client
 
@@ -104,7 +104,7 @@ You guessed it! Time for another EAS tweak and yet ONE FINAL build variant (targ
       "channel": "simulator",
       "developmentClient": true,
       "android": {
-        "gradleCommand": ":app:assembleDebug",
+        "gradleCommand": ":app:assembleSimulatorDebug",
         "buildType": "apk"
       },
       "ios": {
@@ -125,6 +125,38 @@ Run off and create that Build Target/Flavor if you haven't already.
 Now when we run `eas build --profile simulator` we'll be left with a Zip of our application builds.
 
 Running those in our simulation should take showcase the Developer Client similar to above.
+
+## Gotcha's with Local Dev
+
+Now that we've added all of these flavors. `yarn start|android|ios` commands don't really do what we'd expect. The solution, is adding the DEV flavor/scheme to the startup process.
+
+```json
+{
+  "start:dev": "expo start --dev-client --scheme babygroot-development",
+  "android": "expo run:android --variant=DevelopmentDebug",
+  "ios": "expo run:ios --scheme babygroot-development
+```
+
+This will hit the Development flavor, but without dev ENVs
+Say we want to include some ENVs for local dev to pull to our local Simulators. What then?
+
+Similar to web, we can run this with DOTENV or DOPPLER.
+
+```json
+{
+"withEnv:dev": "DOTENV_CONFIG_PATH=.env.development node -r dotenv/config ./scripts/yarnWithEnv",
+"start:dev": "yarn withEnv:dev expo start --dev-client --scheme babygroot-development",
+"android:dev": "yarn withEnv:dev expo run:android --variant=DevelopmentDebug",
+"ios:dev": "yarn withEnv:dev expo run:ios --scheme babygroot-development
+```
+
+The above works for local dev by running dotenv for the right dotfile.
+But do we really want to manage that??
+
+Nope... Insert DOPPLER
+
+Instead we can have Doppler source all those ENVs for us in the startup scripts.
+Lets take a look!
 
 ## Next Up -- ENVS w/ Doppler
 

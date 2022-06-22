@@ -13,7 +13,7 @@
     - [Expo Dashboard](#expo-dashboard)
       - [Builds](#builds)
       - [Credentials](#credentials)
-    - [Play Store Dashboard](#play-store-dashboard)
+    - [Android Credentials](#android-credentials)
   - [But Wait... What about Dev, Alpha, Production?!?](#but-wait-what-about-dev-alpha-production)
 
 ## Your first build w/ EAS
@@ -43,6 +43,7 @@ There are two types of "builds" that Expo can manage for us. "internal" and "sto
 As you would expect it. `store` is meant to get our app ready for the AppStores.
 To start we need to make an `internal` build in Expo.
 
+- Ensure expo-cli and eas-cli are installed from the previous steps.
 - Ensure you are logged into eas w/ `eas whoami`
 - From our "hello world" app run `eas build:configure` - this will output `eas.json` and update our `app.json` file.
 
@@ -63,20 +64,18 @@ If you take a close look, you'll see `preview` is marked `distribution: internal
 This means it will not push to the AppStore and is only meant to be built and installed through Expo.
 
 You should get a prompt for `select platform`.
-Go ahead and select `All`
+Select `iOS` to start.
 
 From here, you'll be prompted "Do you want to use your apple dev account?"
 **YES PLEASE** -- Expo will manage all your Certs, Profiles, etc.
 This is one of the main benefits of Expo... trust me - you don't want to do this manually.
 
 What are all these things?!
-More on that later... for now just know there's a lot of "stuff" the AppStore needs to verify you, your app, and get it ready to ship.
-And each store has their own set of "stuff" that needs managed.
+More on that later... for now just know there's a lot of "stuff" the AppStore needs to verify you, your app, and get it ready to ship. Each store has their own set of "stuff" that needs managed.
 
 #### Setting up a Device
 
-During the process you'll be prompted to set up or choose a list of Devices that should be able to download and test your app.
-Each device has a uniq UUID attached. Follow the prompts and add your physical device.
+During the process you'll be prompted to set up or choose a list of Devices that should be able to download and test your app. (iOS) Each device has a uniq UUID attached. Follow the prompts and add your physical device.
 
 ![register-device](images/building-your-first-app/register-device.png)
 [Setting up Expo Profile](./setting-up-expo-profile.md)
@@ -86,7 +85,7 @@ Each device has a uniq UUID attached. Follow the prompts and add your physical d
 
 #### Setup Push Notifications
 
-When Expo asks if you would like to enable Push Notifications go ahead and select Yes. We'll need to add `capabilities` via XCode later to have this fully functioning, but this adds the key to the AppStore.
+When Expo asks if you would like to enable Push Notifications go ahead and select Yes. For iOS We'll need to add `capabilities` via XCode later to have this fully functioning, but this adds the key to the AppStore. For Android, we'll need to provision Firebase through Google's console (Assuming no 3rd party lib)
 
 #### SUCCESS
 
@@ -130,9 +129,11 @@ Taking a closer look, you'll notice Expo has created an AdHoc `Developer Certifi
 
 ![apple creds](images/building-your-first-app/apple-certs.png)
 
-### Play Store Dashboard
+### Android Credentials
 
-TODO: Follow up with Android specifics
+We'll need to add credentials a slightly different way w/ Expo. More on that soon, we'll want to add our Flavor variants first.
+
+[(see Android Credentials)](04-android-adding-flavors.md#android-credentials)
 
 ## But Wait... What about Dev, Alpha, Production?!?
 
@@ -141,4 +142,4 @@ If you look at the profile from our preview build in expo or the AppStore you'll
 
 Lets fix that!
 
-[Adding Build Variants](./adding-build-variants.md)
+[Adding Build Variants](./03-adding-build-variants.md)

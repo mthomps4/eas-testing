@@ -35,20 +35,21 @@ Similar to before we'll add a new `scheme` for `-alpha` in our `ios` block for o
 
 ### Rinse and Repeat
 
-Take a look back at our notes for [adding build targets](./ios-adding-build-targets.md) for ios.
-Follow all of these instructions until you have a new target `alpha` with an updated name and appIcon.
-All of this should be the exact same until we go to build.
+Take a look back at our notes for [adding build targets](./04-ios-adding-build-targets.md) for ios.
+
+Follow all of these instructions until you have a new target `alpha` with an updated name and appIcon. All of this should be the exact same until we go to build.
 
 ## Building for TestFlight
 
 ### Versioning
 
-We can chat a ton about versioning... TLDR we want CI/CD to handle a good chunk of this for us.
+We can chat a ton about versioning...
+TLDR we want CI/CD to handle a good chunk of this for us. [(see more here)](11-ci-cd-setup.md)
 
 For now we need to update the version or buildNumber before we can submit to the store.
 Open the `info.plist` file and bump this number
 
-```sh
+```xml
   <key>CFBundleVersion</key>
   <string>9</string>
 ```
@@ -69,7 +70,16 @@ Again, follow the prompts and let EAS handle all the things:
 - wait...
 - Hopefully Success! (If not double check all the steps for building our targets)
 
-GOTCHA: If you are using Expo Modules remember to RE RUN the `npx` command each time you create a new target. This will ensure all the native files are updated with the knowledge of your new target.
+GOTCHA: If you are using Expo Modules remember to RE RUN the `npx` command each time you create a new target. This will ensure all the native files are updated with the knowledge of your new target. It will also duplicate a chunk of code in the Podfile, feel free to clean that up.
+
+```ruby
+# duplicated code
+    begin
+      expo_patch_react_imports!(installer)
+    rescue StandardError => e
+      Pod::UI.warn e
+    end
+```
 
 If you have a successful build, lets go see the differences in Expo Dashboard.
 
@@ -77,10 +87,11 @@ If you have a successful build, lets go see the differences in Expo Dashboard.
 
 ### Expo Dashboard
 
-If you navigate to Expo and your project within you should see your projects and recent activity.
-To see a list of builds for a specific project, you can click into the names on the left.
+If you navigate to Expo and your project within you should see your projects and recent activity. To see a list of builds for a specific project, you can click into the names on the left.
 
 You'll see your most recent builds as well, here you can note where we've built an internal build to download from Expo, as well as our "alpha" build for the store.
+
+> NOTE: If you kept the `slug` the same in `app.config.js` you should only see ONE project with multiple identifiers and builds underneath. In the example below, I left my slug unique to the profile resulting in a project PER Variant.
 
 ![expo-dashboard](images/expo-dash/expo-dashboard.png)
 
@@ -92,7 +103,7 @@ If you click on credentials, you can also see the keys and credentials Expo has 
 
 ## TestFlight Dashboard
 
-Overview
+[testflight overview](testflight-overview.md)
 
 ### Testing Groups and Users
 
@@ -143,4 +154,4 @@ When using External users or groups, a build must be reviewed by Apple before it
 
 You have an app ready in the AppStore. Now lets take one final look at how we can Debug these builds should anything go wrong.
 
-[Creating the Development Build](./creating-the-development-build.md)
+[Creating the Development Build](./09-creating-the-development-build.md)
