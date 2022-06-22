@@ -1,3 +1,5 @@
+// OLD     "withEnv:dev": "DOTENV_CONFIG_PATH=.env.development node -r dotenv/config ./scripts/yarnWithEnv"
+
 const spawn = require("child_process").spawn;
 
 // Executes a yarn command in the context of a dotenv file
