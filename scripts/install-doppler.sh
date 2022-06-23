@@ -28,8 +28,11 @@ brew install dopplerhq/cli/doppler
 #   install_doppler_with_apt()
 # fi
 
-# echo doppler --version
+echo "Running Doppler... *Ping"
+echo doppler --version
+doppler run --token="$DOPPLER_TOKEN" -- echo "...*Pong"
 
+# echo doppler --version
 # doppler run --token="$DOPPLER_TOKEN" -- true
 
 # # Should pull from Expo Secrets
