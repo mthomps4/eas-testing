@@ -1,3 +1,4 @@
+const dopplerSecrets = require("./doppler-secrets");
 // https://docs.expo.dev/build-reference/variables/
 // https://docs.expo.dev/build-reference/variables/#built-in-environment-variables
 
@@ -13,9 +14,13 @@ const isCI = process.env.CI; // 1 or 0
 // eas build env || .env.* file from start:* (yarn start:dev)
 const profile = process.env.APP_ENV || "local";
 
-let config = {};
-
 if (profile) {
+  const dopplerToken = process.env.DOPPLER_TOKEN;
+  if (!dopplerToken) return {};
+  const secrets = dopplerSecrets.getSecrets(dopplerToken);
+
+  console.log({ secrets });
+
   const isProduction = profile === "production";
   const appName = isProduction ? "baby-groot" : `baby-groot-${profile}`;
   const myEnv = process.env.MY_ENV || "NOPE...";
@@ -37,6 +42,7 @@ if (profile) {
         profile,
         appName,
         myEnv,
+        secrets,
       },
     },
   };
