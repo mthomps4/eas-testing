@@ -2,7 +2,6 @@
 // https://docs.expo.dev/build-reference/variables/#can-i-share-environment-variables-defined-in
 
 const dopplerSecrets = require("./doppler-secrets");
-const emptyConfig = {};
 
 // set through EAS build
 const buildId = process.env.EAS_BUILD_ID || "local-build";
@@ -10,31 +9,34 @@ const buildProfile = process.env.EAS_BUILD_PROFILE || "local";
 const gitHash = process.env.EAS_BUILD_COMMIT_HASH || "local build";
 const isCI = process.env.CI; // 1 or 0
 
-// Should be present from Expo Secrets
-// Note: if this is under one Project, you may need to namespace the ENV `DOPPLER_TOKEN_PREVIEW` `DOPPLER_TOKEN_${buildProfile.toUpperCase()}`
-const dopplerToken = process.env.DOPPLER_TOKEN;
-if (!dopplerToken) return emptyConfig;
+const isProduction = buildProfile === "production";
+const projectName = "baby-groot";
+const appName = isProduction ? projectName : `${projectName}-${buildProfile}`;
 
-const generateConfig = async () => {
+const baseConfig = {
+  expo: {
+    name: appName,
+    slug: projectName,
+    owner: "mthomps4",
+    assetBundlePatterns: ["**/*"],
+  },
+};
+
+// Note: if this is split between Projects, you can simplify to a DOPPLER_TOKEN env per project.
+// Should be namespaced in the project via Expo Secrets
+const tokenKey = `DOPPLER_TOKEN_${buildProfile.toUpperCase()}`;
+const dopplerToken = process.env[tokenKey];
+if (!dopplerToken) return baseConfig;
+
+const generateConfigWithSecrets = async () => {
   const secrets = await dopplerSecrets.getSecrets(dopplerToken);
-  const profile = secrets.APP_ENV;
-
-  if (!profile) return emptyConfig;
-
   console.log({ secrets });
   // Destructure secrets needed...
-
-  const isProduction = profile === "production";
-  const appName = isProduction ? "baby-groot" : `baby-groot-${profile}`;
-  const myEnv = process.env.MY_ENV || "NOPE...";
+  const myEnv = secrets.MY_ENV || "NOPE...";
 
   return {
     expo: {
-      name: appName,
-      slug: appName,
-      owner: "mthomps4",
-      version: "2.0.6", // 2.0.6-7 ?? Chat w/ Dominic later.
-      assetBundlePatterns: ["**/*"],
+      ...baseConfig.expo,
       extra: {
         eas: {
           buildId,
@@ -51,6 +53,6 @@ const generateConfig = async () => {
   };
 };
 
-export default generateConfig()
+export default generateConfigWithSecrets()
   .then((res) => res)
   .catch(() => emptyConfig);
