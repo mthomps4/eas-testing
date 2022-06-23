@@ -2,6 +2,7 @@
 // https://docs.expo.dev/build-reference/variables/#can-i-share-environment-variables-defined-in
 
 const dopplerSecrets = require("./doppler-secrets");
+const emptyConfig = {};
 
 // set through EAS build
 const buildId = process.env.EAS_BUILD_ID || "local-build";
@@ -12,42 +13,46 @@ const isCI = process.env.CI; // 1 or 0
 // Should be present from Expo Secrets
 // Note: if this is under one Project, you may need to namespace the ENV `DOPPLER_TOKEN_PREVIEW` `DOPPLER_TOKEN_${buildProfile.toUpperCase()}`
 const dopplerToken = process.env.DOPPLER_TOKEN;
-
-const emptyConfig = {};
-
 if (!dopplerToken) return emptyConfig;
 
-const secrets = dopplerSecrets.getSecrets(dopplerToken);
-const profile = secrets.APP_ENV;
+const generateConfig = async () => {
+  const secrets = await dopplerSecrets.getSecrets(dopplerToken);
+  const profile = secrets.APP_ENV;
 
-if (!profile) return emptyConfig;
+  if (!profile) return emptyConfig;
 
-console.log({ secrets });
+  console.log({ secrets });
+  // Destructure secrets needed...
 
-const isProduction = profile === "production";
-const appName = isProduction ? "baby-groot" : `baby-groot-${profile}`;
-const myEnv = process.env.MY_ENV || "NOPE...";
+  const isProduction = profile === "production";
+  const appName = isProduction ? "baby-groot" : `baby-groot-${profile}`;
+  const myEnv = process.env.MY_ENV || "NOPE...";
 
-const config = {
-  expo: {
-    name: appName,
-    slug: appName,
-    owner: "mthomps4",
-    version: "2.0.6", // 2.0.6-7 ?? Chat w/ Dominic later.
-    assetBundlePatterns: ["**/*"],
-    extra: {
-      eas: {
-        buildId,
-        buildProfile,
-        gitHash,
-        isCI,
+  return {
+    expo: {
+      name: appName,
+      slug: appName,
+      owner: "mthomps4",
+      version: "2.0.6", // 2.0.6-7 ?? Chat w/ Dominic later.
+      assetBundlePatterns: ["**/*"],
+      extra: {
+        eas: {
+          buildId,
+          buildProfile,
+          gitHash,
+          isCI,
+        },
+        profile,
+        appName,
+        myEnv,
+        secrets,
       },
-      profile,
-      appName,
-      myEnv,
-      secrets,
     },
-  },
+  };
 };
+
+const config = await generateConfig()
+  .then((res) => res)
+  .catch(() => emptyConfig);
 
 export default config;
