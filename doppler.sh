@@ -9,8 +9,10 @@ apt install -y curl gnupg
 
 (curl -Ls --tlsv1.2 --proto "=https" --retry 3 https://cli.doppler.com/install.sh || wget -t 3 -qO- https://cli.doppler.com/install.sh) | sudo sh
 
-export HISTIGNORE='export DOPPLER_TOKEN*'
+echo -e "setup:\r\n  project: baby-groot\r\n  config: preveiw" > doppler.yaml
 
-# Should pull from Expo Secrets
-# export DOPPLER_TOKEN='dp.st.prd.xxxx'
-doppler run -- true
+doppler run --token="$DOPPLER_TOKEN" -- true
+
+# # Should pull from Expo Secrets
+# # export HISTIGNORE='export DOPPLER_TOKEN*'
+# # export DOPPLER_TOKEN='dp.st.prd.xxxx'
