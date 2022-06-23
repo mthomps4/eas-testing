@@ -28,7 +28,9 @@ echo $OSTYPE
 #   install_doppler_with_apt()
 # fi
 
-# doppler run --token="$DOPPLER_TOKEN" -- true
+echo doppler --version
+
+doppler run --token="$DOPPLER_TOKEN" -- true
 
 # # Should pull from Expo Secrets
 # export HISTIGNORE='export DOPPLER_TOKEN*'
