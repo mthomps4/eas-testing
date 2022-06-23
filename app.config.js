@@ -53,6 +53,6 @@ const generateConfigWithSecrets = async () => {
   };
 };
 
-export default generateConfigWithSecrets()
-  .then((res) => res)
-  .catch(() => emptyConfig);
+const config = await generateConfigWithSecrets();
+
+export default config;
