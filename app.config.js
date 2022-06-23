@@ -51,8 +51,6 @@ const generateConfig = async () => {
   };
 };
 
-const config = await generateConfig()
+export default generateConfig()
   .then((res) => res)
   .catch(() => emptyConfig);
-
-export default config;
