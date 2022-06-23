@@ -153,6 +153,8 @@ Any secrets would be pulled from that file or Secrets hard coded in Expo's dashb
 
 This means that to use Doppler, we need to `write` the `eas.json` when building. While we could make a script that does all that... It drives us to getting CI/CD running.
 
+> NOTE: Matt is currently looking into installing doppler-cli with Expo folks in a pre-hook to avoid having to manually write out `eas.json` in the action. TBD
+
 ## Last step
 
 Finally, as I mentioned we don't want to manage all the Build ENVs every go -- and there's still Versioning to think about. Lets look at what a full CI/CD would look like with GitHub Actions.
