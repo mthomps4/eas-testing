@@ -16,9 +16,9 @@ echo $OSTYPE
 # }
 
 # install_doppler_with_brew() {
-  echo "installing doppler with brew"
-  brew install gnupg
-  brew install dopplerhq/cli/doppler
+echo "installing doppler with brew"
+brew install gnupg
+brew install dopplerhq/cli/doppler
 # }
 
 # if grep -qi "huh" <<< $OSTYPE;
@@ -28,9 +28,9 @@ echo $OSTYPE
 #   install_doppler_with_apt()
 # fi
 
-echo doppler --version
+# echo doppler --version
 
-doppler run --token="$DOPPLER_TOKEN" -- true
+# doppler run --token="$DOPPLER_TOKEN" -- true
 
 # # Should pull from Expo Secrets
 # export HISTIGNORE='export DOPPLER_TOKEN*'
