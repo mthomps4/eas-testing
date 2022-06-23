@@ -1,7 +1,7 @@
 // https://docs.expo.dev/build-reference/variables/#built-in-environment-variables
 // https://docs.expo.dev/build-reference/variables/#can-i-share-environment-variables-defined-in
 
-const dopplerSecrets = require("./doppler-secrets");
+// const dopplerSecrets = require("./doppler-secrets");
 
 // set through EAS build
 const buildId = process.env.EAS_BUILD_ID || "local-build";
@@ -28,8 +28,12 @@ const tokenKey = `DOPPLER_TOKEN_${buildProfile.toUpperCase()}`;
 const dopplerToken = process.env[tokenKey];
 if (!dopplerToken) return baseConfig;
 
-const generateConfigWithSecrets = async () => {
-  const secrets = await dopplerSecrets.getSecrets(dopplerToken);
+const generateConfigWithSecrets = () => {
+  // const secrets = await dopplerSecrets.getSecrets(dopplerToken);
+  const secrets = JSON.parse(
+    require("child_process").execSync("node ./scripts/doppler-secrets.js")
+  );
+
   console.log({ secrets });
   // Destructure secrets needed...
   const myEnv = secrets.MY_ENV || "NOPE...";
@@ -53,6 +57,6 @@ const generateConfigWithSecrets = async () => {
   };
 };
 
-const config = await generateConfigWithSecrets();
+const config = generateConfigWithSecrets();
 
 export default config;
