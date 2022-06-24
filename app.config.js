@@ -24,19 +24,19 @@ const baseConfig = {
 
 // Note: if this is split between Projects, you can simplify to a DOPPLER_TOKEN env per project.
 // Should be namespaced in the project via Expo Secrets
-const tokenKey = `DOPPLER_TOKEN_${buildProfile.toUpperCase()}`;
-const dopplerToken = process.env[tokenKey];
-if (!dopplerToken) return baseConfig;
+// const tokenKey = `DOPPLER_TOKEN_${buildProfile.toUpperCase()}`;
+// const dopplerToken = process.env[tokenKey];
+// if (!dopplerToken) return baseConfig;
 
 const generateConfigWithSecrets = () => {
   // const secrets = await dopplerSecrets.getSecrets(dopplerToken);
-  const secrets = JSON.parse(
-    require("child_process").execSync("node ./scripts/doppler-secrets.js")
-  );
+  // const secrets = JSON.parse(
+  //   require("child_process").execSync("node ./scripts/doppler-secrets.js")
+  // );
 
-  console.log({ secrets });
+  // console.log({ secrets });
   // Destructure secrets needed...
-  const myEnv = secrets.MY_ENV || "NOPE...";
+  const myEnv = process.env.MY_ENV || "NOPE...";
 
   return {
     expo: {
@@ -48,10 +48,10 @@ const generateConfigWithSecrets = () => {
           gitHash,
           isCI,
         },
-        profile,
+        // profile,
         appName,
         myEnv,
-        secrets,
+        // secrets,
       },
     },
   };
